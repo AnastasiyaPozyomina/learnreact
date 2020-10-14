@@ -1,6 +1,7 @@
 Полезные ссылки:
-Установка react-bootstrap https://react-bootstrap.github.io/getting-started/introduction
+Установка material-ui https://material-ui.com/ru/components/
 Установка react-router https://reactrouter.com/web/guides/quick-start
+Плагин Auto Import 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

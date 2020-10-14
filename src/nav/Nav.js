@@ -1,14 +1,32 @@
 import React from 'react';
-import '../nav/Nav.css';
-import Navbar from 'react-bootstrap/Navbar';
+// import logo from './logo.svg';
+import './Nav.css';
+import { Link,  HandleClick, Breadcrumbs }  from '@material-ui/core/';
 
 
-class Navbar extends React.Component {
+
+
+
+
+
+
+export default class Navigation extends React.Component {
     render() {
         return ( 
-             <h1>Привет</h1>   
+          <Breadcrumbs aria-label="breadcrumb">
+  <Link color="inherit" href="/">
+    Home
+  </Link>
+  <Link color="inherit" href="/about">
+    About
+  </Link>
+  <Link color="inherit" href="/blog">
+   Blog
+  </Link>
+  <Link color="inherit" href="/contacts">
+   Contact
+  </Link>
+</Breadcrumbs>
         )
     }
 }
-
-export default Navbar;
