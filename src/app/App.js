@@ -16,7 +16,7 @@ class App extends React.Component {
         return ( 
             <div className = "App" >
             <Header />
-            <Button variant="primary">Кнопкапше</Button>
+            <Button variant="primary">Кнопка</Button>
             <Nav />
             <Main />
            

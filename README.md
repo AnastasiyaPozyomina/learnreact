@@ -1,3 +1,7 @@
+Полезные ссылки:
+Установка react-bootstrap https://react-bootstrap.github.io/getting-started/introduction
+Установка react-router https://reactrouter.com/web/guides/quick-start
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
