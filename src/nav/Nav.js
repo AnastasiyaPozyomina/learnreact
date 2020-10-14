@@ -1,24 +1,14 @@
 import React from 'react';
 import '../nav/Nav.css';
+import Navbar from 'react-bootstrap/Navbar';
 
 
-class Nav extends React.Component {
+class Navbar extends React.Component {
     render() {
-        let nav = {
-            "main": '/index',
-            "about": '/about',
-            "price": '/buy/price'
-        }
         return ( 
-        <nav >
-            <ul className="nav justify-content-end">
-            {Object.keys(nav).map(elem => {
-            return <li className="nav-item nav-link text-primary"> {elem} </li>;
-        })}
-            </ul>
-        </nav>
-        );
+             <h1>Привет</h1>   
+        )
     }
 }
 
-export default Nav;
+export default Navbar;

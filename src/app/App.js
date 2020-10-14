@@ -7,8 +7,7 @@ import './App.css';
 import Header from '../header/Header';
 import Main from '../main/Main';
 import Footer from '../footer/Footer';
-import Nav from '../nav/Nav';
-import { Button } from 'react-bootstrap';
+
 
 
 class App extends React.Component {
@@ -16,8 +15,7 @@ class App extends React.Component {
         return ( 
             <div className = "App" >
             <Header />
-            <Button variant="primary">Кнопка</Button>
-            <Nav />
+    
             <Main />
            
             <Footer />
