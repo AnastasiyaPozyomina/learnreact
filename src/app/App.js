@@ -6,6 +6,7 @@ import About from '../Pages/About/About';
 import Blog from '../Pages/Blog/Blog';
 import Contacts from '../Pages/Contacts/Contacts';
 import Navigation from '../nav/Nav';
+import PrimarySearchAppBar from '../components/PrimarySearchAppBar/PrimarySearchAppBar';
 
 
 
@@ -17,7 +18,7 @@ export default class App extends React.Component {
             <div className = "App" >
             <Router>
       <div>
-      <Navigation />
+      <PrimarySearchAppBar />
         <Switch>
           <Route path="/about">
             <About />
