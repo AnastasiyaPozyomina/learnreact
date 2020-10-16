@@ -1,5 +1,4 @@
 import React from 'react';
-import PrimarySearchAppBar from '../../components/PrimarySearchAppBar/PrimarySearchAppBar';
 import './About.css';
 
 

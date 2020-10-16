@@ -3,6 +3,7 @@
 <li> Установка material-ui https://material-ui.com/ru/components/</li>
 <li> Установка react-router https://reactrouter.com/web/guides/quick-start</li>
 <li> Плагин Auto Import </li>
+<li> npm https://www.npmjs.com/</li>
 </ul>
 
  [Create React App](https://github.com/facebook/create-react-app).

@@ -7,15 +7,16 @@ import Blog from '../Pages/Blog/Blog';
 import Contacts from '../Pages/Contacts/Contacts';
 import Navigation from '../nav/Nav';
 import PrimarySearchAppBar from '../components/PrimarySearchAppBar/PrimarySearchAppBar';
-
-
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 
 
 export default class App extends React.Component {
     render() {
         return ( 
-            <div className = "App" >
+          <React.Fragment>
+      <CssBaseline />
+      <div className = "App" >
             <Router>
       <div>
       <PrimarySearchAppBar />
@@ -37,6 +38,8 @@ export default class App extends React.Component {
     </Router>
             </div>
             
+    </React.Fragment>
+           
         );
     }
 }

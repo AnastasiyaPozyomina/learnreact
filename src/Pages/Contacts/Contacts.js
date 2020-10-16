@@ -3,12 +3,9 @@ import './Contacts.css';
 
 
 export default class Contacts extends React.Component {
-    render() {
-        return ( 
-            <div>
-         Contacts
-            </div>
-        )
-    }
+  render () {
+    return (
+     <div>Hello</div>
+    );
+  }
 }
-

@@ -4,12 +4,6 @@ import './Nav.css';
 import { Link,  HandleClick, Breadcrumbs }  from '@material-ui/core/';
 
 
-
-
-
-
-
-
 export default class Navigation extends React.Component {
     render() {
         return ( 
