@@ -7,7 +7,7 @@ import Blog from '../Pages/Blog/Blog';
 import Contacts from '../Pages/Contacts/Contacts';
 import Navigation from '../nav/Nav';
 import PrimarySearchAppBar from '../components/PrimarySearchAppBar/PrimarySearchAppBar';
-import CssBaseline from '@material-ui/core/CssBaseline';
+
 
 
 
@@ -15,7 +15,7 @@ export default class App extends React.Component {
     render() {
         return ( 
           <React.Fragment>
-      <CssBaseline />
+     
       <div className = "App" >
             <Router>
       <div>

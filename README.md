@@ -4,6 +4,7 @@
 <li> Установка react-router https://reactrouter.com/web/guides/quick-start</li>
 <li> Плагин Auto Import </li>
 <li> npm https://www.npmjs.com/</li>
+<li>React Developer Tools расширение для Google(вкладки components и profiler) https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi/related?hl=en</li>
 </ul>
 
  [Create React App](https://github.com/facebook/create-react-app).
