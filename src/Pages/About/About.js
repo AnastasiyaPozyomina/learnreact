@@ -1,18 +1,15 @@
 import React from 'react';
-import Game from '../../components/Game/Game';
-import './About.css';
+import MainContent from '../../components/main_content';
 
 
 export default class About extends React.Component {
     render() {
         return ( 
             <div>
-                <h1>Игра Крестики Нолики</h1>
-               <Game />
+            <MainContent h2="OUR COMPANY" h4="ABOUT US"/>  
             </div>
-   
-            
-        );
-    }
+         
+    );
+}
 }
 

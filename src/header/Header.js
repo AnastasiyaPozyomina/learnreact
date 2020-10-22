@@ -1,19 +1,19 @@
 import React from 'react';
-import './Header.css';
-import Navigation from '../nav/Nav';
+import Nav from '../nav/Nav';
 
 
 
 
 
 
-class Header extends React.Component {
-    render() {
-        return ( 
-            <Navigation />
-           
-        )
-    }
+export default class Header extends React.Component {
+  render () {
+    return (
+      <header className="">
+      <Nav />
+      </header>
+      
+    );
+  }
 }
 
-export default Header;

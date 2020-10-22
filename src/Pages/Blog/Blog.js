@@ -1,5 +1,4 @@
 import React from 'react';
-import ImageGridList from '../../components/imageGridList/ImageGridList';
 import './Blog.css';
 
 
@@ -10,7 +9,7 @@ import './Blog.css';
         return ( 
             <div>
             <h1>Блог</h1>
-            <ImageGridList />
+        
             </div>
         );
     }

@@ -1,8 +1,8 @@
 import React from 'react';
-import './Contacts.css';
 
 
-export default class Contacts extends React.Component {
+
+export default class Contact extends React.Component {
   render () {
     return (
      <div>Hello</div>
