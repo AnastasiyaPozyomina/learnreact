@@ -14,7 +14,7 @@ export default function Member(props) {
           </div>
         </div>
         <div className="down-content">
-          <h4>{props.h4}</h4>
+          <h4>{props.fio}</h4>
           <span>{props.specialization}</span>
           <p>{props.description}</p>
         </div>

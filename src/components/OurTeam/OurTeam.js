@@ -6,7 +6,7 @@ export default function OurTeam() {
   const specialistsComponents = specialistsData.map((specialist) => (
     <Member
       key={specialist.id}
-      h4={specialist.h4}
+      fio={specialist.fio}
       specialization={specialist.specialization}
       img={specialist.img}
       description={specialist.description}
