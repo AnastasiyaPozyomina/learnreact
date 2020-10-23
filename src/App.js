@@ -11,7 +11,7 @@ import {
 } from "react-router-dom";
 import Contact from "./pages/Contacts/Contacts";
 import About from "./pages/About/About";
-import OurProducts from "./pages/Our-products";
+import OurProducts from "./pages/OurProducts/OurProducts";
 import Home from "./pages/Home/Home";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
