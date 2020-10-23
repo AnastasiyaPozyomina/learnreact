@@ -1,17 +1,19 @@
 import React from 'react';
 import './App.css';
 import '../assets/css/templatemo-sixteen.css';
-import Header from '../header/Header';
+import '../assets/css/fontawesome.css';
+import Header from '../components/header/Header';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Redirect
 } from "react-router-dom";
-import Contact from '../Pages/Contacts/Contacts';
-import About from '../Pages/About/About';
-import OurProducts from '../Pages/Our-products';
-import Home from '../Pages/Home/Home';
+import Contact from '../pages/Contacts/Contacts';
+import About from '../pages/About/About';
+import OurProducts from '../pages/Our-products';
+import Home from '../pages/Home/Home';
+
 
 
 
@@ -23,7 +25,9 @@ export default class App extends React.Component {
     return (
       <Router>
       <div className="App">
-        <Header />
+      <Header />
+  
+  
         <Switch>
           <Route  path="/home" component={Home} />
           <Route

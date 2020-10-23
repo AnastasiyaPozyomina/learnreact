@@ -1,5 +1,6 @@
 import React from 'react';
-import './Main.css';
+import About from '../../pages/About/About';
+
 
 
 
@@ -8,9 +9,7 @@ import './Main.css';
     render() {
 
         return ( 
-         <div className="container">
-            
-            </div>
+          <div></div>
         )
     }
 }
