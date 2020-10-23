@@ -1,6 +1,5 @@
 import React from "react";
 import OwlCarousel from "react-owl-carousel";
-import client01 from "../../assets/images/client-01.png";
 
 export default class Lients extends React.Component {
   render() {
@@ -17,27 +16,27 @@ export default class Lients extends React.Component {
               <div className="owl-clients owl-carousel owl-loaded owl-drag">
                 <OwlCarousel items={5} autoplay loop margin={5}>
                   <div className="client-item">
-                    <img src={client01} alt="1" />
+                    <img src="images/client-01.png" alt="1" />
                   </div>
 
                   <div className="client-item">
-                    <img src={client01} alt="2" />
+                    <img src="images/client-01.png" alt="2" />
                   </div>
 
                   <div className="client-item">
-                    <img src={client01} alt="3" />
+                    <img src="images/client-01.png" alt="3" />
                   </div>
 
                   <div className="client-item">
-                    <img src={client01} alt="4" />
+                    <img src="images/client-01.png" alt="4" />
                   </div>
 
                   <div className="client-item">
-                    <img src={client01} alt="5" />
+                    <img src="images/client-01.png" alt="5" />
                   </div>
 
                   <div className="client-item">
-                    <img src={client01} alt="6" />
+                    <img src="images/client-01.png" alt="6" />
                   </div>
                 </OwlCarousel>
               </div>

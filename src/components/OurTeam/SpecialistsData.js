@@ -1,10 +1,3 @@
-import team01 from "../../assets/images/team_01.jpg";
-import team02 from "../../assets/images/team_02.jpg";
-import team03 from "../../assets/images/team_03.jpg";
-import team04 from "../../assets/images/team_04.jpg";
-import team05 from "../../assets/images/team_05.jpg";
-import team06 from "../../assets/images/team_06.jpg";
-
 const specialistsData = [
   {
     id: 1,
@@ -12,7 +5,7 @@ const specialistsData = [
     specialization: "CO-Founder",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.",
-    img: team01,
+    img: "images/team_01.jpg",
   },
 
   {
@@ -21,7 +14,7 @@ const specialistsData = [
     specialization: "Product Expert",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.",
-    img: team02,
+    img: "images/team_02.jpg",
   },
 
   {
@@ -30,7 +23,7 @@ const specialistsData = [
     specialization: "Chief Marketing",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.",
-    img: team03,
+    img: "images/team_03.jpg",
   },
 
   {
@@ -39,7 +32,7 @@ const specialistsData = [
     specialization: "Product Specialist",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.",
-    img: team04,
+    img: "images/team_04.jpg",
   },
 
   {
@@ -48,7 +41,7 @@ const specialistsData = [
     specialization: "Product Photographer",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.",
-    img: team05,
+    img: "images/team_05.jpg",
   },
 
   {
@@ -57,7 +50,7 @@ const specialistsData = [
     specialization: "General Manager",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.",
-    img: team06,
+    img: "images/team_06.jpg",
   },
 ];
 

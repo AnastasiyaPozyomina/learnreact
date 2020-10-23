@@ -1,5 +1,4 @@
 import React from "react";
-import featureImage from "../../assets/images/feature-image.jpg";
 import SocialIcons from "../SocialIcons/SocialIcons";
 
 export default class BestFeatures extends React.Component {
@@ -15,7 +14,7 @@ export default class BestFeatures extends React.Component {
             </div>
             <div className="col-md-6">
               <div className="right-image">
-                <img src={featureImage} alt="" />
+                <img src="images/feature-image.jpg" alt="" />
               </div>
             </div>
             <div className="col-md-6">

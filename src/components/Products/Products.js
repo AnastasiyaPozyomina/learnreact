@@ -1,10 +1,4 @@
 import React from "react";
-import product01 from "../../assets/images/product_01.jpg";
-import product02 from "../../assets/images/product_02.jpg";
-import product03 from "../../assets/images/product_03.jpg";
-import product04 from "../../assets/images/product_04.jpg";
-import product05 from "../../assets/images/product_05.jpg";
-import product06 from "../../assets/images/product_06.jpg";
 
 export default class Products extends React.Component {
   render() {
@@ -30,7 +24,7 @@ export default class Products extends React.Component {
                   <div className="col-lg-4 col-md-4 all" data-category="des">
                     <div className="product-item">
                       <a href="#">
-                        <img src={product01} alt="" />
+                        <img src="images/product_01.jpg" alt="" />
                       </a>
                       <div className="down-content">
                         <a href="#">
@@ -65,7 +59,7 @@ export default class Products extends React.Component {
                   <div className="col-lg-4 col-md-4 all" data-category="dev">
                     <div className="product-item">
                       <a href="#">
-                        <img src={product02} alt="" />
+                        <img src="images/product_02.jpg" alt="" />
                       </a>
                       <div className="down-content">
                         <a href="#">
@@ -100,7 +94,7 @@ export default class Products extends React.Component {
                   <div className="col-lg-4 col-md-4 all " data-category="gra">
                     <div className="product-item">
                       <a href="#">
-                        <img src={product03} alt="" />
+                        <img src="images/product_03.jpg" alt="" />
                       </a>
                       <div className="down-content">
                         <a href="#">
@@ -135,7 +129,7 @@ export default class Products extends React.Component {
                   <div className="col-lg-4 col-md-4 all" data-category="gra">
                     <div className="product-item">
                       <a href="#">
-                        <img src={product04} alt="" />
+                        <img src="images/product_04.jpg" alt="" />
                       </a>
                       <div className="down-content">
                         <a href="#">
@@ -170,7 +164,7 @@ export default class Products extends React.Component {
                   <div className="col-lg-4 col-md-4 all" data-category="dev">
                     <div className="product-item">
                       <a href="#">
-                        <img src={product05} alt="" />
+                        <img src="images/product_05.jpg" alt="" />
                       </a>
                       <div className="down-content">
                         <a href="#">
@@ -205,7 +199,7 @@ export default class Products extends React.Component {
                   <div className="col-lg-4 col-md-4 all" data-category="des">
                     <div className="product-item">
                       <a href="#">
-                        <img src={product06} alt="" />
+                        <img src="images/product_06.jpg" alt="" />
                       </a>
                       <div className="down-content">
                         <a href="#">
