@@ -5,6 +5,8 @@ import MainContent from '../../components/main_content/main_content';
 import OurTeam from '../../components/our_team/our_team';
 
 
+
+
 export default class About extends React.Component {
     render() {
         return ( 
@@ -12,7 +14,7 @@ export default class About extends React.Component {
             <MainContent h2="OUR COMPANY" h4="ABOUT US"/>  
             <BestFeatures />
             <OurTeam />
-           <Footer />
+            <Footer />
             </div>
          
     );
