@@ -8,7 +8,7 @@ export default class OurProducts extends React.Component {
   render () {
     return (
       <div>
-       <MainContent h2="SIXTEEN PRODUCTS" h4="NEW ARRIVALS" img="about-heading" />
+       <MainContent h2="SIXTEEN PRODUCTS" h4="NEW ARRIVALS" className="page-heading products-heading header-text" />
 		   <Products /> 
       </div>
 		
