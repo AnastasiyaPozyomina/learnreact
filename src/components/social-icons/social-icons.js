@@ -5,11 +5,11 @@ import React from 'react';
     render() {
 
         return (
-            <ul class="social-icons">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+            <ul className="social-icons">
+            <li><a href="#"><i className="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i className="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i className="fa fa-behance"></i></a></li>
           </ul>
         )
         

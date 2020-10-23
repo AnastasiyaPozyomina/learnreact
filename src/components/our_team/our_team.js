@@ -6,7 +6,7 @@ import specialistsData from './specialistsData';
 
 
 export default function OurTeam() {
-
+  
   const specialistsComponents = specialistsData.map(specialist =>
   <Member key={specialist.id} h4={specialist.h4} specialization={specialist.specialization}  img={specialist.img} description={specialist.description} />
   )
@@ -24,9 +24,7 @@ export default function OurTeam() {
         </div>
       </div>
     </div>
-          
-
-        
+  
     
-        )
+    )
 }

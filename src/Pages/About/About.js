@@ -12,7 +12,7 @@ export default class About extends React.Component {
     render() {
         return ( 
             <div>
-            <MainContent h2="OUR COMPANY" h4="ABOUT US" className="page-heading about-heading header-text"/>  
+            <MainContent h2={"OUR COMPANY"} h4={"ABOUT US"} className={"page-heading about-heading header-text"} />  
             <BestFeatures />
             <OurTeam />
             <Clients />

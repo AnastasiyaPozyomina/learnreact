@@ -9,7 +9,7 @@ export default class Contact extends React.Component {
   render () {
     return (
     <div>
-    <MainContent h2="LET’S GET IN TOUCH" h4="CONTACT US" className="page-heading contact-heading header-text"  />
+    <MainContent h2={"LET’S GET IN TOUCH"} h4={"CONTACT US"} className={"page-heading contact-heading header-text"}  />
     <FindUs />
     <Clients />
     <Footer />
