@@ -9,10 +9,10 @@ import {
   Route,
   Redirect
 } from "react-router-dom";
-import Contact from '../pages/Contacts/Contacts';
-import About from '../pages/About/About';
-import OurProducts from '../pages/Our-products';
-import Home from '../pages/Home/Home';
+import Contact from '../Pages/Contacts/Contacts';
+import About from '../Pages/About/About';
+import OurProducts from '../Pages/Our-products';
+import Home from '../Pages/Home/Home';
 import 'owl.carousel/dist/assets/owl.carousel.css';  
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
