@@ -7,20 +7,15 @@ import team05 from '../../assets/images/team_05.jpg';
 import team06 from '../../assets/images/team_06.jpg';
 import SocialIcons from '../social-icons/social-icons';
 
-export default class Member extends React.Component {
-    render() {
+export default function Member(props) {
+  
         return ( 
             
-              <div className="row">
-                <div className="col-md-12">
-                  <div className="section-heading">
-                    <h2>Our Team Members</h2>
-                  </div>
-                </div>
+    
                 <div className="col-md-4">
                   <div className="team-member">
                     <div className="thumb-container">
-                      <img src={team01} alt=""/>
+                      <img src={props.img} alt=""/>
                       <div className="hover-effect">
                         <div className="hover-content">
                         <SocialIcons />
@@ -28,19 +23,18 @@ export default class Member extends React.Component {
                       </div>
                     </div>
                     <div className="down-content">
-                      <h4>Johnny William</h4>
-                      <span>CO-Founder</span>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
-                    </div>
-                  </div>
+                      <h4>{props.h4}</h4>
+                      <span>{props.specialization}</span>
+                       <p>{props.text}</p>
                 </div>
-          
-              </div>
-           
+            </div>
+          </div>
+      
+              
       
     
     
 
         )
-    }
+    
 }
