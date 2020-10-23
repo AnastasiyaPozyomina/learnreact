@@ -1,6 +1,6 @@
 import React from 'react';
 import featureImage from '../../assets/images/feature-image.jpg';
-
+import SocialIcons from '../social-icons/social-icons';
 
 export default class BestFeatures extends React.Component {
     render() {
@@ -23,12 +23,7 @@ export default class BestFeatures extends React.Component {
             <div className="left-content">
               <h4>Who we are &amp; What we do?</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis.</p>
-              <ul className="social-icons">
-                <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
-                <li><a href="#"><i className="fa fa-behance"></i></a></li>
-              </ul>
+              <SocialIcons />
             </div>
           </div>
         </div>

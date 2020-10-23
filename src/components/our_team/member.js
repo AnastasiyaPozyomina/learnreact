@@ -5,6 +5,7 @@ import team03 from '../../assets/images/team_03.jpg';
 import team04 from '../../assets/images/team_04.jpg';
 import team05 from '../../assets/images/team_05.jpg';
 import team06 from '../../assets/images/team_06.jpg';
+import SocialIcons from '../social-icons/social-icons';
 
 export default class Member extends React.Component {
     render() {
@@ -22,12 +23,7 @@ export default class Member extends React.Component {
                       <img src={team01} alt=""/>
                       <div className="hover-effect">
                         <div className="hover-content">
-                          <ul className="social-icons">
-                            <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i className="fa fa-behance"></i></a></li>
-                          </ul>
+                        <SocialIcons />
                         </div>
                       </div>
                     </div>

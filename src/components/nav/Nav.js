@@ -18,13 +18,13 @@ export default class Nav extends React.Component {
                 <Link to="/" className ="nav-link">Home <span class="sr-only">(current)</span></Link>
               </li>
               <li className="nav-item">
-                <Link to="/our-products" className ="nav-link">Our-products</Link>
+                <Link to="/our-products" className ="nav-link">Our Products</Link>
               </li>
                <li className="nav-item">
                 <Link to="/about" className ="nav-link">About</Link>
               </li>
               <li className="nav-item">
-                <Link to="/contact" className ="nav-link">Contact-us</Link>
+                <Link to="/contact" className ="nav-link">Contact Us</Link>
               </li>
             </ul>
             </div>
