@@ -1,73 +1,32 @@
 import React from 'react';
-import team01 from '../../assets/images/team_01.jpg';
-import team02 from '../../assets/images/team_02.jpg';
-import team03 from '../../assets/images/team_03.jpg';
-import team04 from '../../assets/images/team_04.jpg';
-import team05 from '../../assets/images/team_05.jpg';
-import team06 from '../../assets/images/team_06.jpg';
 import Member from './member';
+import specialistsData from './specialistsData';
 
 
 
 
 export default function OurTeam() {
-      
+
+  const specialistsComponents = specialistsData.map(specialist =>
+  <Member key={specialist.id} h4={specialist.h4} specialization={specialist.specialization}  img={specialist.img} description={specialist.description} />
+  )
+  
         return ( 
-          <div class="team-members">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="section-heading">
-            <h2>Our Team Members</h2>
-          </div>
+          <div className="team-members">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="section-heading">
+                  <h2>Our Team Members</h2>
+                </div>
+              </div>
+          {specialistsComponents}
         </div>
-          
-          <Member 
-          h4 = "Johnny William"
-          specialization = "CO-Founder"
-          text = "Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla."
-          img = {team01}
-          />
-          
-          <Member
-          h4 = "Karry Pitcher"
-          specialization = "Product Expert"
-          text = "Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla."
-          img = {team02}
-          />
-          <Member
-          h4 = "Michael Soft"
-          specialization = "Chief Marketing"
-          text = "Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla."
-          img = {team03}
-          />
-
-          <Member
-          h4 = "Mary Cool"
-          specialization = "Product Specialist"
-          text = "Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla."
-          img = {team04}
-          />
-
-          <Member
-          h4 = "George Walker"
-          specialization = "Product Photographer"
-          text = "Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla."
-          img = {team05}
-          />
-
-          <Member
-          h4 = "Kate Town"
-          specialization = "General Manager"
-          text = "Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla."
-          img = {team06}
-          />
-
-</div>
       </div>
     </div>
-    
+          
 
-        )
+        
     
+        )
 }

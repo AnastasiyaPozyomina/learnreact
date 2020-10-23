@@ -1,10 +1,4 @@
 import React from 'react';
-import team01 from '../../assets/images/team_01.jpg';
-import team02 from '../../assets/images/team_02.jpg';
-import team03 from '../../assets/images/team_03.jpg';
-import team04 from '../../assets/images/team_04.jpg';
-import team05 from '../../assets/images/team_05.jpg';
-import team06 from '../../assets/images/team_06.jpg';
 import SocialIcons from '../social-icons/social-icons';
 
 export default function Member(props) {
@@ -25,7 +19,7 @@ export default function Member(props) {
                     <div className="down-content">
                       <h4>{props.h4}</h4>
                       <span>{props.specialization}</span>
-                       <p>{props.text}</p>
+                       <p>{props.description}</p>
                 </div>
             </div>
           </div>
