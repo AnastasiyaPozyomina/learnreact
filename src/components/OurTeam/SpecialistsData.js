@@ -1,7 +1,7 @@
 const specialistsData = [
   {
     id: 1,
-    h4: "Johnny William",
+    fio: "Johnny William",
     specialization: "CO-Founder",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.",
@@ -10,7 +10,7 @@ const specialistsData = [
 
   {
     id: 2,
-    h4: "Karry Pitcher",
+    fio: "Karry Pitcher",
     specialization: "Product Expert",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.",
@@ -19,7 +19,7 @@ const specialistsData = [
 
   {
     id: 3,
-    h4: "Michael Soft",
+    fio: "Michael Soft",
     specialization: "Chief Marketing",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.",
@@ -28,7 +28,7 @@ const specialistsData = [
 
   {
     id: 4,
-    h4: "Mary Cool",
+    fio: "Mary Cool",
     specialization: "Product Specialist",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.",
@@ -37,7 +37,7 @@ const specialistsData = [
 
   {
     id: 5,
-    h4: "George Walker",
+    fio: "George Walker",
     specialization: "Product Photographer",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.",
@@ -46,7 +46,7 @@ const specialistsData = [
 
   {
     id: 6,
-    h4: "Kate Town",
+    fio: "Kate Town",
     specialization: "General Manager",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.",
