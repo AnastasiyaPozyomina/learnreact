@@ -1,5 +1,6 @@
 import React from 'react';
-import Button from '../Button/Button';
+import Link from '../Link/Link';
+
 
 export default class CardService extends React.Component {
   render () {
@@ -11,8 +12,7 @@ export default class CardService extends React.Component {
           </div> <div className="down-content">
             <h4> {this.props.title} </h4>
             <p> {this.props.description} </p>
-            {/* <a href="#" class="filled-button"> {this.props.textbtn} </a> */}
-            <Button 
+            <Link 
              text = {this.props.textbtn}
             />
           </div>

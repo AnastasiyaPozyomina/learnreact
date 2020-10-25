@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../Button/Button';
+import Link from '../Link/Link';
 
 export default class AboutCompany extends React.Component {
   render () {
@@ -28,7 +28,7 @@ export default class AboutCompany extends React.Component {
                 </p>
               </div>
 
-              <Button 
+              <Link
               text={'Read More'} 
               />
 
