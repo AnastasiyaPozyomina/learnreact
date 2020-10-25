@@ -1,7 +1,7 @@
 import React from "react";
-import SocialIcons from '../SocialIcons/SocialIcons';
 
-export default class BestFeatures extends React.Component {
+
+export default class AboutCompany extends React.Component {
   render () {
     return (
       <div className="best-features about-features">
@@ -9,12 +9,7 @@ export default class BestFeatures extends React.Component {
           <div className="row">
             <div className="col-md-12">
               <div className="section-heading">
-                <h2>{this.props.title}</h2>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="right-image">
-                <img src="images/feature-image.jpg" alt="" />
+               <h2>{this.props.title}</h2>
               </div>
             </div>
             <div className="col-md-6">
@@ -31,7 +26,11 @@ export default class BestFeatures extends React.Component {
                   eum ratione ex ea praesentium quibusdam? Aut, in eum facere
                   corrupti necessitatibus perspiciatis quis.
                 </p>
-                <SocialIcons />
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="right-image">
+                <img src="images/feature-image.jpg" alt="" />
               </div>
             </div>
           </div>

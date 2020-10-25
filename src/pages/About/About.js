@@ -15,7 +15,9 @@ export default class About extends React.Component {
           subtitle={'ABOUT US'}
           className={'page-heading about-heading header-text'}
         />
-        <BestFeatures />
+        <BestFeatures
+         title={'Our Background'}
+        />
         <OurTeam />
         <Services />
         <Clients />
