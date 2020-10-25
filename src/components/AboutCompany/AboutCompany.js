@@ -1,5 +1,5 @@
-import React from "react";
-
+import React from 'react';
+import Button from '../Button/Button';
 
 export default class AboutCompany extends React.Component {
   render () {
@@ -9,7 +9,7 @@ export default class AboutCompany extends React.Component {
           <div className="row">
             <div className="col-md-12">
               <div className="section-heading">
-               <h2>{this.props.title}</h2>
+                <h2>{this.props.title}</h2>
               </div>
             </div>
             <div className="col-md-6">
@@ -27,6 +27,11 @@ export default class AboutCompany extends React.Component {
                   corrupti necessitatibus perspiciatis quis.
                 </p>
               </div>
+
+              <Button 
+              text={'Read More'} 
+              />
+
             </div>
             <div className="col-md-6">
               <div className="right-image">
@@ -39,3 +44,4 @@ export default class AboutCompany extends React.Component {
     );
   }
 }
+
