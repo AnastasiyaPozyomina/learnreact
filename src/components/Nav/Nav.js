@@ -1,16 +1,32 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import {NavLink} from 'react-router-dom';
 
 export default class Nav extends React.Component {
-  render() {
+   state = {
+    color: 'white'
+  }
+
+    listenScrollEvent = e => {
+    if (window.scrollY > 400) {
+      this.setState({color: '#1e1e1e'})
+    } else {
+      this.setState({color: '#fff'})
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.listenScrollEvent)
+  }
+
+  render () {
     return (
       <nav className="navbar navbar-expand-lg">
         <div className="container">
-          <Link to="/" className="navbar-brand">
-            <h2>
+          <NavLink to="/" className="navbar-brand">
+            <h2 style={{color: this.state.color}}>
               Sixteen <em>Clothing</em>
             </h2>
-          </Link>
+          </NavLink>
           <button
             className="navbar-toggler"
             type="button"
@@ -20,29 +36,42 @@ export default class Nav extends React.Component {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon" />
           </button>
           <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <Link to="/" className="nav-link">
-                  Home <span class="sr-only">(current)</span>
-                </Link>
+              <li className="nav-item" >
+                <NavLink 
+                to="/"
+                style={{color: this.state.color}}
+                className="nav-link">
+                  Home<span class="sr-only">(current)</span>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link to="/our-products" className="nav-link">
+                <NavLink 
+                to="/our-products"
+                style={{color: this.state.color}}
+                className="nav-link">
                   Our Products
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link to="/about" className="nav-link">
+                <NavLink 
+                to="/about" 
+                style={{color: this.state.color}}
+                className="nav-link">
                   About Us
-                </Link>
+                </NavLink>
               </li>
-              <li className="nav-item">
-                <Link to="/contact" className="nav-link">
+              <li className="nav-item" >
+                <NavLink
+                  style={{color: this.state.color}}
+                  className="nav-link"
+                  to="/contact"
+                >
                   Contact Us
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>

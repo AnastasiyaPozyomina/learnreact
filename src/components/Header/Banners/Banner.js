@@ -10,7 +10,7 @@ export default class Banner extends React.Component {
           items={1} 
           autoplay 
           loop 
-          margin={5}
+          margin={0}
           >
             <div class="banner-item-01">
               <div class="text-content">

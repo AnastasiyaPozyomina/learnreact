@@ -26,12 +26,10 @@ export default class AboutCompany extends React.Component {
                   eum ratione ex ea praesentium quibusdam? Aut, in eum facere
                   corrupti necessitatibus perspiciatis quis.
                 </p>
-              </div>
-
               <Link
               text={'Read More'} 
               />
-
+              </div>
             </div>
             <div className="col-md-6">
               <div className="right-image">

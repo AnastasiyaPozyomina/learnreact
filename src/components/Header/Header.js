@@ -1,10 +1,26 @@
-import React from "react";
-import Nav from "../Nav/Nav";
+import React from 'react';
+import Nav from '../Nav/Nav';
 
 export default class Header extends React.Component {
-  render() {
+    state = {
+    bgColor: 'red'
+  }
+
+    listenScrollEvent = e => {
+    if (window.scrollY > 400) {
+      this.setState({bgcolor: '#fff'})
+    } else {
+      this.setState({bgcolor: '#212529'})
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.listenScrollEvent)
+  }
+ 
+  render () {
     return (
-      <header>
+      <header className="position-fixed" style={{backgroundColor: this.state.bgcolor}}>
         <Nav />
       </header>
     );
