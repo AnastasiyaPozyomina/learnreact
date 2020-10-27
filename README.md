@@ -9,6 +9,7 @@
 <li> react redux https://yarnpkg.com/package/react-redux </li>
 <li>react logger https://yarnpkg.com/package/redux-logger</li>
 <li>react trunk https://yarnpkg.com/package/react-thunk</li>
+<li>Документация redux https://redux.js.org/ </li>
 </ul>
 
  [Create React App](https://github.com/facebook/create-react-app).

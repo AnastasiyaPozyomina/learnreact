@@ -1,6 +1,7 @@
 import React from 'react';
 import StarRating from '../Rating/StarRating';
 
+
 export default class CardProduct extends React.Component {
   render () {
     return (
