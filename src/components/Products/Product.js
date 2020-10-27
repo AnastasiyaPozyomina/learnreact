@@ -10,7 +10,7 @@ export default class Product extends React.Component {
             <a className="product-item" href={'#' + product._id}>
               <img src={product.image} alt={product.title} />
               <div className="down-content">
-                  <h4>{product.title}</h4>
+                <h4>{product.title}</h4>
                 <div className="d-flex justify-content-between">
                   <StarRating />
                   <h6>$ {product.price}</h6>

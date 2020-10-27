@@ -439,7 +439,7 @@ header .navbar {
 	font-size: 17px;
 	color: #1a6692;
 	margin-bottom: 20px;
-	
+	height: 30px;
 }
 
 .product-item .down-content h6 {
@@ -976,6 +976,7 @@ footer .inner-content p a {
 	}
 	.product-item .down-content h4 {
 		margin-bottom: 20px!important;
+		
 	}
 	.product-item .down-content h6 {
 		position: absolute!important;
