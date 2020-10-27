@@ -1,7 +1,18 @@
 import React from "react";
+import CardProduct from "./CardProduct";
+import productsData from './ProductsData';
 
 export default class Products extends React.Component {
   render() {
+    const productComponents = productsData.map(elem => (
+      <CardProduct
+        key={elem.id}
+        title={elem.title}
+        price = {elem.price}
+        description={elem.description}
+        img={elem.img} 
+      />
+    ));
     return (
       <div className="products">
         <div className="container">
@@ -21,216 +32,7 @@ export default class Products extends React.Component {
             <div className="col-md-12">
               <div className="filters-content filter-gallery">
                 <div className="row grid">
-                  <div className="col-lg-4 col-md-4 all" data-category="des">
-                    <div className="product-item">
-                      <a href="#">
-                        <img src="images/product_01.jpg" alt="" />
-                      </a>
-                      <div className="down-content">
-                        <a href="#">
-                          <h4>Tittle goes here</h4>
-                        </a>
-                        <h6>$18.25</h6>
-                        <p>
-                          Lorem ipsume dolor sit amet, adipisicing elite.
-                          Itaque, corporis nulla aspernatur.
-                        </p>
-                        <ul className="stars">
-                          <li>
-                            <i className="fa fa-star"></i>
-                          </li>
-                          <li>
-                            <i className="fa fa-star"></i>
-                          </li>
-                          <li>
-                            <i className="fa fa-star"></i>
-                          </li>
-                          <li>
-                            <i className="fa fa-star"></i>
-                          </li>
-                          <li>
-                            <i className="fa fa-star"></i>
-                          </li>
-                        </ul>
-                        <span>Reviews (12)</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4 col-md-4 all" data-category="dev">
-                    <div className="product-item">
-                      <a href="#">
-                        <img src="images/product_02.jpg" alt="" />
-                      </a>
-                      <div className="down-content">
-                        <a href="#">
-                          <h4>Tittle goes here</h4>
-                        </a>
-                        <h6>$16.75</h6>
-                        <p>
-                          Lorem ipsume dolor sit amet, adipisicing elite.
-                          Itaque, corporis nulla aspernatur.
-                        </p>
-                        <ul className="stars">
-                          <li>
-                            <i className="fa fa-star"></i>
-                          </li>
-                          <li>
-                            <i className="fa fa-star"></i>
-                          </li>
-                          <li>
-                            <i className="fa fa-star"></i>
-                          </li>
-                          <li>
-                            <i className="fa fa-star"></i>
-                          </li>
-                          <li>
-                            <i className="fa fa-star"></i>
-                          </li>
-                        </ul>
-                        <span>Reviews (24)</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4 col-md-4 all " data-category="gra">
-                    <div className="product-item">
-                      <a href="#">
-                        <img src="images/product_03.jpg" alt="" />
-                      </a>
-                      <div className="down-content">
-                        <a href="#">
-                          <h4>Tittle goes here</h4>
-                        </a>
-                        <h6>$32.50</h6>
-                        <p>
-                          Lorem ipsume dolor sit amet, adipisicing elite.
-                          Itaque, corporis nulla aspernatur.
-                        </p>
-                        <ul className="stars">
-                          <li>
-                            <i className="fa fa-star"></i>
-                          </li>
-                          <li>
-                            <i className="fa fa-star"></i>
-                          </li>
-                          <li>
-                            <i className="fa fa-star"></i>
-                          </li>
-                          <li>
-                            <i className="fa fa-star"></i>
-                          </li>
-                          <li>
-                            <i className="fa fa-star"></i>
-                          </li>
-                        </ul>
-                        <span>Reviews (36)</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4 col-md-4 all" data-category="gra">
-                    <div className="product-item">
-                      <a href="#">
-                        <img src="images/product_04.jpg" alt="" />
-                      </a>
-                      <div className="down-content">
-                        <a href="#">
-                          <h4>Tittle goes here</h4>
-                        </a>
-                        <h6>$24.60</h6>
-                        <p>
-                          Lorem ipsume dolor sit amet, adipisicing elite.
-                          Itaque, corporis nulla aspernatur.
-                        </p>
-                        <ul className="stars">
-                          <li>
-                            <i className="fa fa-star"></i>
-                          </li>
-                          <li>
-                            <i className="fa fa-star"></i>
-                          </li>
-                          <li>
-                            <i className="fa fa-star"></i>
-                          </li>
-                          <li>
-                            <i className="fa fa-star"></i>
-                          </li>
-                          <li>
-                            <i className="fa fa-star"></i>
-                          </li>
-                        </ul>
-                        <span>Reviews (48)</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4 col-md-4 all" data-category="dev">
-                    <div className="product-item">
-                      <a href="#">
-                        <img src="images/product_05.jpg" alt="" />
-                      </a>
-                      <div className="down-content">
-                        <a href="#">
-                          <h4>Tittle goes here</h4>
-                        </a>
-                        <h6>$18.75</h6>
-                        <p>
-                          Lorem ipsume dolor sit amet, adipisicing elite.
-                          Itaque, corporis nulla aspernatur.
-                        </p>
-                        <ul className="stars">
-                          <li>
-                            <i className="fa fa-star"></i>
-                          </li>
-                          <li>
-                            <i className="fa fa-star"></i>
-                          </li>
-                          <li>
-                            <i className="fa fa-star"></i>
-                          </li>
-                          <li>
-                            <i className="fa fa-star"></i>
-                          </li>
-                          <li>
-                            <i className="fa fa-star"></i>
-                          </li>
-                        </ul>
-                        <span>Reviews (60)</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4 col-md-4 all" data-category="des">
-                    <div className="product-item">
-                      <a href="#">
-                        <img src="images/product_06.jpg" alt="" />
-                      </a>
-                      <div className="down-content">
-                        <a href="#">
-                          <h4>Tittle goes here</h4>
-                        </a>
-                        <h6>$12.50</h6>
-                        <p>
-                          Lorem ipsume dolor sit amet, adipisicing elite.
-                          Itaque, corporis nulla aspernatur.
-                        </p>
-                        <ul className="stars">
-                          <li>
-                            <i className="fa fa-star"></i>
-                          </li>
-                          <li>
-                            <i className="fa fa-star"></i>
-                          </li>
-                          <li>
-                            <i className="fa fa-star"></i>
-                          </li>
-                          <li>
-                            <i className="fa fa-star"></i>
-                          </li>
-                          <li>
-                            <i className="fa fa-star"></i>
-                          </li>
-                        </ul>
-                        <span>Reviews (72)</span>
-                      </div>
-                    </div>
-                  </div>
+                 {productComponents}
                 </div>
               </div>
             </div>
