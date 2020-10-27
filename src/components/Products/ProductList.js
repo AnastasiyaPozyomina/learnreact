@@ -3,7 +3,7 @@ import CardProduct from "./CardProduct";
 import productsData from './ProductsData';
 
 
-export default class Products extends React.Component {
+export default class ProductList extends React.Component {
   render() {
     const productComponents = productsData.map(elem => (
       <CardProduct

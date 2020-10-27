@@ -1,6 +1,6 @@
 import React from "react";
 import MainContent from "../../components/MainContent/MainContent";
-import Products from "../../components/Products/Products";
+import Products from "../../components/Products/ProductList";
 
 export default class OurProducts extends React.Component {
   render() {
