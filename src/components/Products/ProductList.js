@@ -1,4 +1,5 @@
 import React from 'react';
+import Filter from '../Filter';
 import data from './../../data.json';
 import Product from './Product';
 
@@ -11,6 +12,23 @@ export default class ProductList extends React.Component {
       sort: '',
     };
   }
+ sortProducts(event){
+console.log(event.target.value);
+ }
+
+ filterProducts = (event) => {
+   if (event.target.value === "") {
+     this.setState({size:event.target.value, product:data.products});
+   } else {
+    this.setState({
+    size:event.target.value,
+    products:data.products.filter(
+      (product) => product.availableSizes.indexOf(event.target.value)>=0
+),
+   
+   });
+  }
+ };
   render () {
     return (
       <div class="products">
@@ -18,17 +36,18 @@ export default class ProductList extends React.Component {
           <div class="row">
             <div class="col-md-12">
               <div class="filters">
-                <ul>
-                  <li class="active" data-filter="*">All Products</li>
-                  <li data-filter=".des">Featured</li>
-                  <li data-filter=".dev">Flash Deals</li>
-                  <li data-filter=".gra">Last Minute</li>
-                </ul>
+              <Filter count ={this.state.products.length}
+              sort="this.state.sort"
+              size="this.state.size"
+              filterProducts={this.filterProducts}
+              sortProducts={this.sortProducts}
+              />
               </div>
             </div>
             <div class="col-md-12">
               <div class="filters-content">
                 <div class="row grid">
+                  
                   <Product products={this.state.products} />
                   <div className="col-md-12">
                     <ul className="pages">

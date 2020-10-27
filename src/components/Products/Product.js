@@ -1,5 +1,7 @@
 import React from 'react';
+import formatCurrency from '../../util';
 import StarRating from '../Rating/StarRating';
+
 
 export default class Product extends React.Component {
   render () {
@@ -17,7 +19,7 @@ export default class Product extends React.Component {
                   
                 </div>
                 <div className="d-flex justify-content-between align-items-center">
-                <h6>$ {product.price}</h6>  
+                <h6> {formatCurrency(product.price)}</h6>  
                 <button type="text" className="button-card">Add To Cart</button>
                 </div>
                 
