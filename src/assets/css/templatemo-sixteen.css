@@ -428,6 +428,7 @@ header .navbar {
 .product-item .down-content {
 	padding: 30px;
 	position: relative;
+	border: 1px solid #eee;
 }
 
 .product-item img {
@@ -445,6 +446,7 @@ header .navbar {
 .product-item .down-content h6 {
 	font-size: 18px;
 	color: #121212;
+	margin-top: 20px;
 }
 
 .product-item .down-content p {
@@ -461,9 +463,6 @@ header .navbar {
 }
 
 .product-item .down-content span {
-	position: absolute;
-	right: 30px;
-	bottom: 30px;
 	font-size: 13px;
 	color: #f33f3f;
 	font-weight: 500;
@@ -983,11 +982,7 @@ footer .inner-content p a {
 		top: 30px!important;
 		right: 30px!important;
 	}
-	.product-item .down-content span {
-		position: absolute!important;
-		right: 30px!important;
-		bottom: 30px!important;
-	}
+
 	.best-features .left-content {
 		margin-bottom: 30px;
 	}

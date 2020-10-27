@@ -13,9 +13,14 @@ export default class Product extends React.Component {
                 <h4>{product.title}</h4>
                 <div className="d-flex justify-content-between">
                   <StarRating />
-                  <h6>$ {product.price}</h6>
+                  <span>Reviews (48)</span>
+                  
                 </div>
+                <div className="d-flex justify-content-between align-items-center">
+                <h6>$ {product.price}</h6>  
                 <button type="text" className="button-card">Add To Cart</button>
+                </div>
+                
               </div>
             </a>
           </li>
