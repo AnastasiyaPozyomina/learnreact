@@ -1,42 +1,35 @@
-import React from "react";
-import CardProduct from "./CardProduct";
-import productsData from './ProductsData';
-
+import React from 'react';
+import data from './../../data.json';
+import Product from './Product';
 
 export default class ProductList extends React.Component {
-  render() {
-    const productComponents = productsData.map(elem => (
-      <CardProduct
-        key={elem.id}
-        title={elem.title}
-        price = {elem.price}
-        description={elem.description}
-        img={elem.img} 
-      />
-    ));
+  constructor () {
+    super ();
+    this.state = {
+      products: data.products,
+      size: '',
+      sort: '',
+    };
+  }
+  render () {
     return (
-      <div className="products">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="filters">
-                <ul>
-                  <li className="active" data-filter="">
-                    All Products
-                  </li>
-                  <li data-filter="des">Featured</li>
-                  <li data-filter="dev">Flash Deals</li>
-                  <li data-filter="gra">Last Minute</li>
-                </ul>
-              </div>
+      <div class="products">
+        <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="filters">
+              <ul>
+                  <li class="active" data-filter="*">All Products</li>
+                  <li data-filter=".des">Featured</li>
+                  <li data-filter=".dev">Flash Deals</li>
+                  <li data-filter=".gra">Last Minute</li>
+              </ul>
             </div>
-            <div className="col-md-12">
-              <div className="filters-content filter-gallery">
-                <div className="row grid">
-                 {productComponents}
-                </div>
-              </div>
-            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="filters-content">
+                <div class="row grid">
+                  <Product products={this.state.products} />
             <div className="col-md-12">
               <ul className="pages">
                 <li>
@@ -53,7 +46,7 @@ export default class ProductList extends React.Component {
                 </li>
                 <li>
                   <a href="#">
-                    <i className="fa fa-angle-double-right"></i>
+                    <i className="fa fa-angle-double-right" />
                   </a>
                 </li>
               </ul>
@@ -61,6 +54,9 @@ export default class ProductList extends React.Component {
           </div>
         </div>
       </div>
+    </div>
+    </div>
+    </div>
     );
   }
 }

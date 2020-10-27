@@ -10,6 +10,8 @@
 <li>react logger https://yarnpkg.com/package/redux-logger</li>
 <li>react trunk https://yarnpkg.com/package/react-thunk</li>
 <li>Документация redux https://redux.js.org/ </li>
+<li>Reactjs code snippets (rcc - выводит Creates a React component class with ES6 module system (Reactjs code snippets)
+https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets </li>
 </ul>
 
  [Create React App](https://github.com/facebook/create-react-app).

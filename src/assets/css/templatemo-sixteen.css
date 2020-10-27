@@ -439,12 +439,10 @@ header .navbar {
 	font-size: 17px;
 	color: #1a6692;
 	margin-bottom: 20px;
+	
 }
 
 .product-item .down-content h6 {
-	position: absolute;
-	top: 30px;
-	right: 30px;
 	font-size: 18px;
 	color: #121212;
 }
@@ -472,7 +470,20 @@ header .navbar {
 }
 
 
-
+.button-card {
+	background-color: #f33f3f;
+    color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 300;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+	transition: all 0.3s;
+	outline: none;
+	border:none;
+	margin-top: 20px;
+}
 
 /* Best Features */
 
