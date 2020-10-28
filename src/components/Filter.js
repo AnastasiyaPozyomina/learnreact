@@ -6,7 +6,7 @@ export default class Filter extends Component {
       <div className="filter d-flex justify-content-between">
         <div className="filter-result">{this.props.count} Products</div>
         <div className="filter-soft">
-          Order{" "}
+          Order
           <select value={this.props.sort} onChange={this.props.sortProducts}>
             <option>Latest</option>
             <option value="lowest">Lowest</option>
@@ -15,7 +15,7 @@ export default class Filter extends Component {
 
         </div>
         <div className="filter-size">
-          Filter{" "}
+          Filter
           <select value={this.props.size} onChange={this.props.filterProducts}>
             <option value="ALL">ALL</option>
             <option value="XS">XS</option>

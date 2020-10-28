@@ -624,14 +624,14 @@ footer .inner-content p a {
 /* Product Page */
 
 .products {
-	margin-top: 100px;
+	margin-top: 20px;
 }
 
 .products .filters {
 	text-align: center;
 	border-bottom: 1px solid #eee;
 	padding-bottom: 10px;
-	margin-bottom: 60px;
+	margin-bottom: 15px;
 }
 
 .products .filters li {

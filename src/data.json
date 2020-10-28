@@ -46,7 +46,7 @@
         "title": "Cold Shoulder Dress",
         "description": "This A-line mini dress steals the spotlight with flowing, cape style sleeves that captivate with embellished cold shoulder slits. A layered surplice neckline makes for an undeniably feminine look that's destined to captivate.",
         "price": 44,
-        "availableSizes": [ "S","M","XL","XXL"]
+        "availableSizes": [ "S","M","XXL"]
         },
         {
         "_id": "dress7",
@@ -54,7 +54,7 @@
         "title": "Deep Plunge Long Dress",
         "description": "This sophisticated maxi takes the plunge into a gracefully ruched center seam that's easy on the midsection. Fit for a true temptress, the high front slit adds swaying movement to every seductive step you take.",
         "price": 54,
-        "availableSizes": ["XS","S","M","L", "XL","XXL"]
+        "availableSizes": ["XS","S","M","L", "XL"]
         },
         {
         "_id": "dress8",
@@ -62,7 +62,7 @@
         "title": "V-Neck Sweater Dress",
         "description": "Sweater dresses don't always have to be casual! This slinky style has a snug bodycon fit from the elbows and waist down, with a ruched V-neck bodice for extra seductive flair!.",
         "price": 39,
-        "availableSizes": ["S","M","XL"]
+        "availableSizes": ["S","M"]
         },
         {
         "_id": "dress9",
@@ -78,7 +78,7 @@
         "title": "Lace Inset V-Neck Dress",
         "description": "When it comes to maxi dresses, instead of opting for the traditional sheath or bodycon, try a bewitching A-line adorned with delicate lace. insets Fully lined underneath its sheer overlay, this piece exudes sensuality with a peek of skin at the midriff and a deep plunge neckline.",
         "price": 89,
-        "availableSizes":["XS","S","M","L", "XL","XXL"]
+        "availableSizes":["XS","S","M","L"]
         }
 
 
