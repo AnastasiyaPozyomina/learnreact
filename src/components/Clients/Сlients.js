@@ -1,7 +1,6 @@
 import React from 'react';
 import OwlCarousel from 'react-owl-carousel';
 
-
 export default class Clients extends React.Component {
   render () {
     return (
@@ -15,12 +14,7 @@ export default class Clients extends React.Component {
             </div>
             <div className="col-md-12">
               <div className="owl-clients owl-carousel owl-loaded owl-drag">
-                <OwlCarousel 
-                items={5} 
-                autoplay 
-                loop 
-                margin={5}
-                >
+                <OwlCarousel items={5} autoplay loop margin={5}>
                   <div className="client-item">
                     <img src="images/client-01.png" alt="1" />
                   </div>

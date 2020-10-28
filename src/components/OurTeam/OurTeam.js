@@ -1,9 +1,9 @@
-import React from "react";
-import Member from "./Member";
-import specialistsData from "./SpecialistsData";
+import React from 'react';
+import Member from './Member';
+import specialistsData from './SpecialistsData';
 
-export default function OurTeam() {
-  const specialistsComponents = specialistsData.map((specialist) => (
+export default function OurTeam () {
+  const specialistsComponents = specialistsData.map (specialist => (
     <Member
       key={specialist.id}
       fio={specialist.fio}

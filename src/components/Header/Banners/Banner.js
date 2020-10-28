@@ -1,17 +1,12 @@
-import React from "react";
-import OwlCarousel from "react-owl-carousel";
+import React from 'react';
+import OwlCarousel from 'react-owl-carousel';
 
 export default class Banner extends React.Component {
-  render() {
+  render () {
     return (
       <div class="banner header-text">
         <div class="owl-banner owl-carousel owl-loaded owl-drag">
-          <OwlCarousel 
-          items={1} 
-          autoplay 
-          loop 
-          margin={0}
-          >
+          <OwlCarousel items={1} autoplay loop margin={0}>
             <div class="banner-item-01">
               <div class="text-content">
                 <h4>Best Offer</h4>

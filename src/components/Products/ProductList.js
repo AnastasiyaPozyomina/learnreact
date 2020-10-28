@@ -8,44 +8,40 @@ export default class ProductList extends React.Component {
     super ();
     this.state = {
       products: data.products,
-      size: "",
-      sort: "",
+      cartItems: [],
+      size: '',
+      sort: '',
     };
   }
- sortProducts = (event) => {
-const sort = event.target.value;
-this.setState((state) => ({
-sort:sort,
-products:this.state.products
-.slice()
-.sort((a,b)=>
-  sort === "lowest" 
-  ? a.price > b.price
-  ? 1
-  :-1
-  :sort ==="highest"
-  ? a.price < b.price
-    ? 1
-    : -1
-  : a._id > b._id
-  ? 1
-  :-1
-),
-}));
-};
- filterProducts = (event) => {
-   if (event.target.value === "ALL") {
-     this.setState({size:event.target.value, products:data.products});
-   } 
-   else {
-    this.setState({
-    size:event.target.value,
-    products:data.products.filter(
-      (product) => product.availableSizes.indexOf(event.target.value)>=0
-    ),
-   });
-  }
- };
+
+  sortProducts = event => {
+    const sort = event.target.value;
+    this.setState (state => ({
+      sort: sort,
+      products: this.state.products
+        .slice ()
+        .sort (
+          (a, b) =>
+            sort === 'lowest'
+              ? a.price > b.price ? 1 : -1
+              : sort === 'highest'
+                  ? a.price < b.price ? 1 : -1
+                  : a._id > b._id ? 1 : -1
+        ),
+    }));
+  };
+  filterProducts = event => {
+    if (event.target.value === 'ALL') {
+      this.setState ({size: event.target.value, products: data.products});
+    } else {
+      this.setState ({
+        size: event.target.value,
+        products: data.products.filter (
+          product => product.availableSizes.indexOf (event.target.value) >= 0
+        ),
+      });
+    }
+  };
   render () {
     return (
       <div class="products">
@@ -53,17 +49,18 @@ products:this.state.products
           <div class="row">
             <div class="col-md-12">
               <div class="filters">
-              <Filter count = {this.state.products.length}
-              sort={this.state.sort}
-              size={this.state.size}
-              filterProducts={this.filterProducts}
-              sortProducts={this.sortProducts}
-              />
+                <Filter
+                  count={this.state.products.length}
+                  sort={this.state.sort}
+                  size={this.state.size}
+                  filterProducts={this.filterProducts}
+                  sortProducts={this.sortProducts}
+                />
               </div>
             </div>
             <div class="col-md-12">
               <div class="filters-content">
-                <div class="row grid">   
+                <div class="row grid">
                   <Product products={this.state.products} />
                   <div className="col-md-12">
                     <ul className="pages">

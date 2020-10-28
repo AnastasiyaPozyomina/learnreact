@@ -4,12 +4,12 @@ import servicesData from './ServicesData';
 
 export default class Services extends React.Component {
   render () {
-    const serviceComponents = servicesData.map(card => (
+    const serviceComponents = servicesData.map (card => (
       <CardService
         key={card.id}
         title={card.title}
         description={card.description}
-        textbtn={card.textbtn} 
+        textbtn={card.textbtn}
       />
     ));
 

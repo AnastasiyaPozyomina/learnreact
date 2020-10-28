@@ -1,8 +1,8 @@
-import React from "react";
-import SocialIcons from "../SocialIcons/SocialIcons";
+import React from 'react';
+import SocialIcons from '../SocialIcons/SocialIcons';
 
 export default class FindUs extends React.Component {
-  render() {
+  render () {
     return (
       <div class="find-us">
         <div class="container">
@@ -17,7 +17,7 @@ export default class FindUs extends React.Component {
                 <iframe
                   src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed"
                   allowfullscreen
-                ></iframe>
+                />
               </div>
             </div>
             <div class="col-md-4">

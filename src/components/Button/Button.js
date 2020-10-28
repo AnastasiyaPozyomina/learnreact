@@ -2,8 +2,7 @@ import React from 'react';
 
 export default class Button extends React.Component {
   render () {
-    return 
-  <button>Read More</button>
-
+    return;
+    <button>Read More</button>;
   }
 }

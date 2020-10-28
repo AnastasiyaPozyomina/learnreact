@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
 export default class MainContent extends React.Component {
-  render() {
+  render () {
     let className = this.props.className;
     const title = <h2>{this.props.title}</h2>;
     const subtitle = <h4>{this.props.subtitle}</h4>;
