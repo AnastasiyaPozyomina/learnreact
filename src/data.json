@@ -6,7 +6,8 @@
         "title": "Floral Print Velvet Dress",
         "description": "Rich florals and luscious velvet make an enchanting combo. This bodycon goes bold with a deep surplice styling in an eye-catching, artistic print. Slip into some glitzy stilettos and you're set to steal the show.",
         "price": 44,
-        "availableSizes": ["M", "S", "XL", "XXL"]
+        "availableSizes": ["M", "S", "XL", "XXL"],
+        "star": 5
         },
         {
         "_id": "dress2",
@@ -14,7 +15,8 @@
         "title": "Ombre Glitter Long Dress",
         "description": "Two silhouettes in one! The base layer is a curve-hugging solid sheath dress softened by the translucent A-line overlay with ombre and glitter details. The halter neckline helps to elongate and slim your form, drawing the eye up and providing balance to the juxtaposing lengths of the garment",
         "price": 34.99,
-        "availableSizes": ["XS","M", "S"]
+        "availableSizes": ["XS","M", "S"],
+        "star": 2.5
         },
         {
         "_id": "dress3",
@@ -22,7 +24,8 @@
         "title": "Cozy Sweater Dress",
         "description": "IT HAS POCKETS! Now that we have that detail out of the way, let's focus on the easy sex-appeal of this Cozy Sweater Dress. Many fall-to-winter items leave you feeling bulky, but this piece shows off your womanly form while keeping you warm. The on-trend cowl neck and cable knit will keep style-seekers asking you for your secret. Layer with leggings and boots to highlight your fashion savvy.",
         "price": 43,
-        "availableSizes": ["XS","M", "S", "L"]
+        "availableSizes": ["XS","M", "S", "L"],
+        "star": 4
         },
         {
         "_id": "dress4",
@@ -30,7 +33,8 @@
         "title": "Ribbed Sweater Dress",
         "description": "A elegantly slimming silhouette with full knit coverage to keep you warm and snug. What's not to love? This extra long sweater dress is ribbed from head to toe with a thick, fold over turtleneck and long sleeves that flare slightly at the wrists.",
         "price": 59,
-        "availableSizes": ["XS", "S"]
+        "availableSizes": ["XS", "S"],
+        "star": 1
         },
         {
         "_id": "dress5",
@@ -38,7 +42,8 @@
         "title": "Ribbed Mock Neck Long Dress",
         "description": "This full-coverage look is your sexiest yet. Our Ribbed Mock Neck Long Dress takes on the chill with a high neckline, long sleeve, maxi length silhouette that flaunts every irresistible curve with its ultra-snug fit.",
         "price": 39,
-        "availableSizes": ["S", "M","L"]
+        "availableSizes": ["S", "M","L"],
+        "star": 5
         },
         {
         "_id": "dress6",
@@ -46,7 +51,8 @@
         "title": "Cold Shoulder Dress",
         "description": "This A-line mini dress steals the spotlight with flowing, cape style sleeves that captivate with embellished cold shoulder slits. A layered surplice neckline makes for an undeniably feminine look that's destined to captivate.",
         "price": 44,
-        "availableSizes": [ "S","M","XXL"]
+        "availableSizes": [ "S","M","XXL"],
+        "star": 4.5
         },
         {
         "_id": "dress7",
@@ -54,7 +60,8 @@
         "title": "Deep Plunge Long Dress",
         "description": "This sophisticated maxi takes the plunge into a gracefully ruched center seam that's easy on the midsection. Fit for a true temptress, the high front slit adds swaying movement to every seductive step you take.",
         "price": 54,
-        "availableSizes": ["XS","S","M","L", "XL"]
+        "availableSizes": ["XS","S","M","L", "XL"],
+        "star": 3.5
         },
         {
         "_id": "dress8",
@@ -62,7 +69,8 @@
         "title": "V-Neck Sweater Dress",
         "description": "Sweater dresses don't always have to be casual! This slinky style has a snug bodycon fit from the elbows and waist down, with a ruched V-neck bodice for extra seductive flair!.",
         "price": 39,
-        "availableSizes": ["S","M"]
+        "availableSizes": ["S","M"],
+        "star": 4.5
         },
         {
         "_id": "dress9",
@@ -70,7 +78,8 @@
         "title": "Strapless Maxi Dress",
         "description": "More comfortable than shorts or pants, and much more elegant! This strapless maxi dress is sensuous and sports a gentle ruching across the bodice that has a slimming effect on your silhouette. The pockets keep it casual and the maxi length can support heels, flats or wedges. Crank up your feminine allure while maintaining your cool comfort!",
         "price": 54,
-        "availableSizes":["XS","S","L"]
+        "availableSizes":["XS","S","L"],
+        "star": 5
         },
         {
         "_id": "dress10",
@@ -78,7 +87,8 @@
         "title": "Lace Inset V-Neck Dress",
         "description": "When it comes to maxi dresses, instead of opting for the traditional sheath or bodycon, try a bewitching A-line adorned with delicate lace. insets Fully lined underneath its sheer overlay, this piece exudes sensuality with a peek of skin at the midriff and a deep plunge neckline.",
         "price": 89,
-        "availableSizes":["XS","S","M","L"]
+        "availableSizes":["XS","S","M","L"],
+        "star": 2
         }
 
 

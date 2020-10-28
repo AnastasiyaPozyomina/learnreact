@@ -1,7 +1,7 @@
 import React from 'react';
 import formatCurrency from '../../util';
 import StarRating from '../Rating/StarRating';
-
+import data from './../../data.json';
 
 export default class Product extends React.Component {
   render () {
@@ -14,7 +14,8 @@ export default class Product extends React.Component {
               <div className="down-content">
                 <h4>{product.title}</h4>
                 <div className="d-flex justify-content-between">
-                  <StarRating />
+                  <StarRating
+                  stars={product.star} />
                   <span>Reviews (48)</span>
                   
                 </div>
