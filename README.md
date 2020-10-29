@@ -13,6 +13,7 @@
 <li>Reactjs code snippets (rcc - выводит Creates a React component class with ES6 module system (Reactjs code snippets)
 https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets </li>
 <li>Метод JavaScript Number toLocaleString () https://www.w3schools.com/jsref/jsref_tolocalestring_number.asp </li>
+<li>Formik.org https://formik.org/docs/tutorial</li>
 </ul>
 
  [Create React App](https://github.com/facebook/create-react-app).
