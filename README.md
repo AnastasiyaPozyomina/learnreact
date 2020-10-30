@@ -14,6 +14,8 @@
 https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets </li>
 <li>Метод JavaScript Number toLocaleString () https://www.w3schools.com/jsref/jsref_tolocalestring_number.asp </li>
 <li>Formik.org https://formik.org/docs/tutorial</li>
+<li>https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek</li>
+<li>React Reveal https://www.npmjs.com/package/react-reveal</li>
 </ul>
 
  [Create React App](https://github.com/facebook/create-react-app).

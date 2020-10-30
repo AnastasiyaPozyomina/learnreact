@@ -429,8 +429,8 @@ header .navbar {
 	padding: 30px;
 	position: relative;
 	border: 1px solid #eee;
+	background-color: #eee;
 }
-
 .product-item img {
 	width: 100%;
 	overflow: hidden;

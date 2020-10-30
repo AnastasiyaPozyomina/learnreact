@@ -1,5 +1,6 @@
 import React from "react";
 import SocialIcons from '../SocialIcons/SocialIcons';
+import Fade from 'react-reveal/Fade';
 
 export default class BestFeatures extends React.Component {
   render () {
@@ -8,15 +9,20 @@ export default class BestFeatures extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
+            <Fade left>
               <div className="section-heading">
                 <h2>{this.props.title}</h2>
               </div>
+              </Fade> 
             </div>
+            <Fade left cascade>
             <div className="col-md-6">
               <div className="right-image">
                 <img src="images/feature-image.jpg" alt="" />
               </div>
             </div>
+            </Fade>
+            <Fade right>
             <div className="col-md-6">
               <div className="left-content">
                 <h4>Who we are &amp; What we do?</h4>
@@ -34,6 +40,7 @@ export default class BestFeatures extends React.Component {
                 <SocialIcons />
               </div>
             </div>
+            </Fade>
           </div>
         </div>
       </div>

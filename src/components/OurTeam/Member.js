@@ -1,8 +1,10 @@
 import React from "react";
 import SocialIcons from "../SocialIcons/SocialIcons";
+import Fade from 'react-reveal/Fade';
 
 export default function Member(props) {
   return (
+    <Fade bottom big cascade>
     <div className="col-md-4">
       <div className="team-member">
         <div className="thumb-container">
@@ -20,5 +22,6 @@ export default function Member(props) {
         </div>
       </div>
     </div>
+    </Fade>
   );
 }
