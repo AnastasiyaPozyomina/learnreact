@@ -1,5 +1,4 @@
 import React from 'react';
-import Bounce from 'react-reveal/Bounce';
 
 export default class MainContent extends React.Component {
   render () {
@@ -13,10 +12,8 @@ export default class MainContent extends React.Component {
           <div className="row">
             <div className="col-md-12">
               <div className="text-content">   
-                <Bounce  cascade text>
                  {subtitle} 
                 {title}
-                </Bounce>
               </div>
             </div>
           </div>
