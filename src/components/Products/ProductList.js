@@ -63,9 +63,8 @@ export default class ProductList extends React.Component {
             <div class="col-md-12">
               <div class="filters-content">
                 <div class="row grid">
-                 
                   <Product products={this.state.products} />
-                  
+
                   <div className="col-md-12">
                     <ul className="pages">
                       <li>
