@@ -8,6 +8,7 @@ export default class FormSend extends Component {
       email: '',
       subject: '',
       message: '',
+      
     };
     this.handleChange = this.handleChange.bind (this);
     this.handleSubmit = this.handleSubmit.bind (this);
@@ -18,11 +19,12 @@ export default class FormSend extends Component {
     this.setState ({
       [name]: value,
     });
+
   }
 
-  handleSubmit (event) {
-    alert (this.state.firstName + ', ' + 'your message has been sent');
-    event.preventDefault ();
+
+  handleSubmit = () => {
+
   }
 
   render () {
@@ -98,6 +100,7 @@ export default class FormSend extends Component {
                             required
                             value={this.state.message}
                             onChange={this.handleChange}
+                            
                           />
                         </fieldset>
                       </div>
@@ -107,8 +110,7 @@ export default class FormSend extends Component {
                             type="submit"
                             value="Send Message"
                             id="form-submit"
-                            class="filled-button"
-                            onSubmit={this.handleSubmit}
+                            class="filled-button" 
                           />
                         </fieldset>
                       </div>
@@ -116,6 +118,9 @@ export default class FormSend extends Component {
                   </form>
                 </div>
               </div>
+              </div>
+              <div class="col-md-4">
+              
             </div>
           </div>
         </div>

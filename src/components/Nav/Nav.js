@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
+import {NavLink, Route} from 'react-router-dom';
 
 export default class Nav extends React.Component {
   state = {
