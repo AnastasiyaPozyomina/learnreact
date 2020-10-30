@@ -88,7 +88,6 @@ export default class ProductList extends React.Component {
             </div>
           </div>
         </div>
-
       </div>
     );
   }

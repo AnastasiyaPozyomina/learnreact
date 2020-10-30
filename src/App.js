@@ -4,7 +4,7 @@ import './assets/css/templatemo-sixteen.css';
 import './assets/css/fontawesome.css';
 import Header from './components/Header/Header';
 import {
-  BrowserRouter as Router,
+  BrowserRouter, Router,
   Redirect,
   Route,
   Switch,
@@ -20,7 +20,7 @@ import Item from './components/Products/Item';
 export default class App extends React.Component {
   render () {
     return (
-      <Router>
+      <BrowserRouter>
         <div className="App">
           <Header />
           <Switch>
@@ -34,7 +34,7 @@ export default class App extends React.Component {
             <Redirect from="/" to="/home" />
           </Switch>
         </div>
-      </Router>
+    </BrowserRouter>
     );
   }
 }

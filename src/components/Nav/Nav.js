@@ -34,7 +34,7 @@ export default class Nav extends React.Component {
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
                 <NavLink
-                  to="/"
+                  to="/home"
                   style={{color: this.state.color}}
                   className="nav-link"
                 >
