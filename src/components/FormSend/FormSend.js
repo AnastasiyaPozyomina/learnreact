@@ -91,12 +91,9 @@ export default class FormSend extends Component {
                         />
                       </div>
                       <div class="col-lg-12">
-                        <input
-                          type="submit"
-                          value="Send Message"
-                          id="form-submit"
-                          class="filled-button"
-                        />
+                        <button className="filled-button" type="submit">
+                          Send Message
+                        </button>
                       </div>
                     </div>
                   </form>
