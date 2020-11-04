@@ -888,9 +888,9 @@ footer .inner-content p a {
 }
 
 .contact-form .filled-button {
-	width: 100%;
+	width: 20%;
 	height: 44px;
-	display: inline-block;
+	display: block;
 	line-height: 42px;
 	margin-bottom: 30px;
 	background-color: #f33f3f;
