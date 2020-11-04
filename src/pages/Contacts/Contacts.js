@@ -14,8 +14,8 @@ export default class Contact extends React.Component {
           subtitle={"CONTACT US"}
           className={"page-heading contact-heading header-text"}
         />
-        <FormSend />
         <FindUs />
+        <FormSend />
         <Clients />
         <Footer />
       </div>

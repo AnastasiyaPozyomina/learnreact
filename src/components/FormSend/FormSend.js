@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Accordion from "../Accordion/Accordion";
 
 export default class FormSend extends Component {
   constructor() {
@@ -99,11 +100,15 @@ export default class FormSend extends Component {
                   </form>
                 </div>
               </div>
+            
+        
+            <div class="col-md-4">
+           <Accordion />
+          </div>
+          </div>
             </div>
-            <div class="col-md-4"></div>
           </div>
         </div>
-      </div>
     );
   }
 }

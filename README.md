@@ -39,6 +39,7 @@ https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets </li>
 <li>Formik.org https://formik.org/docs/tutorial</li>
 <li>https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek</li>
 <li>React Reveal https://www.npmjs.com/package/react-reveal</li>
+<li>https://habr.com/ru/post/492378/</li>
 </ul>
 
 
