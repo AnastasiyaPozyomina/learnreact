@@ -624,7 +624,7 @@ footer .inner-content p a {
 /* Product Page */
 
 .products {
-	margin-top: 100px;
+	padding-top: 40px;
 }
 
 .products .filters {

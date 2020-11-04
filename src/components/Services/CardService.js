@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from '../Link/Link';
+import Link from '../Button/Button';
 
 export default class CardService extends React.Component {
   render () {

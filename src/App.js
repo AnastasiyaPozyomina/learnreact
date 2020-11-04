@@ -15,7 +15,7 @@ import OurProducts from './pages/OurProducts/OurProducts';
 import Home from './pages/Home/Home';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-import Item from './components/Products/Item';
+import ProductCard from './components/Products/ProductCard';
 
 export default class App extends React.Component {
   render () {
@@ -27,7 +27,7 @@ export default class App extends React.Component {
             <Route  path="/home" component={Home} />
             <Route exact path="/our-products" component={OurProducts} />
             <Route   path="/our-products/:id">
-               <Item  /> 
+               <ProductCard /> 
             </Route> 
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />

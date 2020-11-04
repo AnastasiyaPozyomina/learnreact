@@ -1,4 +1,4 @@
-import Fade from 'react-reveal/Fade';
+
 import React from 'react';
 import Filter from '../Filter';
 import data from './../../data.json';
@@ -45,7 +45,6 @@ export default class ProductList extends React.Component {
   };
   render () {
     return (
-      <Fade bottom cascade text>
       <div class="products">
         <div class="container">
           <div class="row">
@@ -92,7 +91,7 @@ export default class ProductList extends React.Component {
           </div>
         </div>
       </div>
-      </Fade>
+     
     );
   }
 }

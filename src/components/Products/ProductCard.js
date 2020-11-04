@@ -1,12 +1,11 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import OurProducts from '../../pages/OurProducts/OurProducts';
+import React, {Component} from 'react';
+import './List.css';
 
 
-export default class AboutCompany extends React.Component {
+export default class ProductCard extends Component {
   render () {
     return (
-      <div className="best-features about-features">
+      <div>
         <div className="container">
           <div className="row">
             <div className="col-md-12">
@@ -28,9 +27,7 @@ export default class AboutCompany extends React.Component {
                   eum ratione ex ea praesentium quibusdam? Aut, in eum facere
                   corrupti necessitatibus perspiciatis quis.
                 </p>
-                <Link  className="filled-button"
-                to="/our-products">Read More</Link>
-               
+            
               </div>
             </div>
             <div className="col-md-6">
@@ -44,3 +41,4 @@ export default class AboutCompany extends React.Component {
     );
   }
 }
+
