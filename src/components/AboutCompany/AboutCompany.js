@@ -1,7 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import OurProducts from '../../pages/OurProducts/OurProducts';
-
+import {Link} from 'react-router-dom';
 
 export default class AboutCompany extends React.Component {
   render () {
@@ -28,9 +26,8 @@ export default class AboutCompany extends React.Component {
                   eum ratione ex ea praesentium quibusdam? Aut, in eum facere
                   corrupti necessitatibus perspiciatis quis.
                 </p>
-                <Link  className="filled-button"
-                to="/our-products">Read More</Link>
-               
+                <Link className="filled-button" to="/about">Read More</Link>
+
               </div>
             </div>
             <div className="col-md-6">

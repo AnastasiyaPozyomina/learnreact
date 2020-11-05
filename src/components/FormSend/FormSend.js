@@ -1,5 +1,9 @@
 import React, { Component } from "react";
-import Accordion from "../Accordion/Accordion";
+import EmailInput from './EmailInput';
+import MessageTextarea from './MessageTextarea';
+import NameInput from './NameInput';
+import SubjectInput from './SubjectInput';
+
 
 export default class FormSend extends Component {
   constructor() {
@@ -9,6 +13,9 @@ export default class FormSend extends Component {
       email: "",
       subject: "",
       message: "",
+      formErrors:{email:''},
+      emailValid:false,
+      formValid:false
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -26,16 +33,7 @@ export default class FormSend extends Component {
   render() {
     return (
       <div>
-        <div class="send-message">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="section-heading">
-                  <h2>Send us a Message</h2>
-                </div>
-              </div>
-              <div class="col-md-8">
-                <div class="contact-form">
+        <div class="contact-form">
                   <form
                     id="contact"
                     action=""
@@ -44,52 +42,16 @@ export default class FormSend extends Component {
                   >
                     <div class="row">
                       <div class="col-lg-12 col-md-12 col-sm-12">
-                        <input
-                          type="text"
-                          name="firstName"
-                          class="form-control"
-                          id="name"
-                          placeholder="Full Name"
-                          required
-                          value={this.state.firstName}
-                          onChange={this.handleChange}
-                        />
+                      <NameInput />
                       </div>
                       <div class="col-lg-12 col-md-12 col-sm-12">
-                        <input
-                          type="text"
-                          name="email"
-                          class="form-control"
-                          id="email"
-                          placeholder="E-Mail Address"
-                          required=""
-                          value={this.state.email}
-                          onChange={this.handleChange}
-                        />
+                      <EmailInput />
                       </div>
                       <div class="col-lg-12 col-md-12 col-sm-12">
-                        <input
-                          name="subject"
-                          type="text"
-                          class="form-control"
-                          id="subject"
-                          placeholder="Subject"
-                          required=""
-                          value={this.state.subject}
-                          onChange={this.handleChange}
-                        />
+                      <SubjectInput />
                       </div>
                       <div class="col-lg-12">
-                        <textarea
-                          name="message"
-                          rows="6"
-                          class="form-control"
-                          id="message"
-                          placeholder="Your Message"
-                          required
-                          value={this.state.message}
-                          onChange={this.handleChange}
-                        />
+                     <MessageTextarea />
                       </div>
                       <div class="col-lg-12">
                         <button className="filled-button" type="submit">
@@ -99,15 +61,6 @@ export default class FormSend extends Component {
                     </div>
                   </form>
                 </div>
-              </div>
-            
-        
-            <div class="col-md-4">
-           <Accordion />
-          </div>
-          </div>
-            </div>
-          </div>
         </div>
     );
   }

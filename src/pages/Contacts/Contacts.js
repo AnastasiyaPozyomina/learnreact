@@ -3,7 +3,7 @@ import MainContent from "../../components/MainContent/MainContent";
 import Clients from "../../components/Clients/Сlients";
 import Footer from "../../components/Footer/Footer";
 import FindUs from "../../components/FindUs/FindUs";
-import FormSend from "../../components/FormSend/FormSend";
+import SendMessage from "../../components/SendMessage/SendMessage";
 
 export default class Contact extends React.Component {
   render() {
@@ -15,7 +15,7 @@ export default class Contact extends React.Component {
           className={"page-heading contact-heading header-text"}
         />
         <FindUs />
-        <FormSend />
+        <SendMessage />
         <Clients />
         <Footer />
       </div>
