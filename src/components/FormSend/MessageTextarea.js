@@ -27,7 +27,6 @@ export default class MessageTextarea extends Component {
                           class="form-control"
                           id="message"
                           placeholder="Your Message"
-                          required
                           value={this.state.message}
                           onChange={this.handleChange}
                         />

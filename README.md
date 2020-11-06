@@ -14,13 +14,13 @@
 
 # Инструменты и технологии
 
-### JavaScript (arrow functions, array functions, spread Operators)
-### React (react-router-dom, react-reveal, react-owl-carousel, material-ui)
-### Redux (react-redux, redux-thunk)
-### VS Code (ES6 Snippets, Prettier, CSS Peek)
-### Chrome ( React Developer Tools, Redux Developer Tools)
-### Git (create repo, commit, remote, create and push branch)
-
+ JavaScript (arrow functions, array functions, spread Operators)
+ React (react-router-dom, react-reveal, react-owl-carousel, material-ui)
+ Redux (react-redux, redux-thunk)
+ VS Code (ES6 Snippets, Prettier, CSS Peek)
+ Chrome ( React Developer Tools, Redux Developer Tools)
+ Git (create repo, commit, remote, create and push branch)
+ 
 ## Полезные ссылки:
 <ul>
 <li> Установка material-ui https://material-ui.com/ru/components/</li>
@@ -41,5 +41,8 @@ https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets </li>
 <li>React Reveal https://www.npmjs.com/package/react-reveal</li>
 <li>https://habr.com/ru/post/492378/</li>
 </ul>
+
+
+
 
 

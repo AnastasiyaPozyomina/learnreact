@@ -861,7 +861,17 @@ footer .inner-content p a {
 	line-height: 42px;
 	border: 1px solid #eee;
 	border-radius: 0px;
-	margin-bottom: 30px;
+}
+
+.input-wrapper {
+margin-bottom: 30px;
+display: flex;
+flex-direction:column;
+}
+
+.input-wrapper  p {
+	text-align: left;
+	color:red
 }
 
 .contact-form input:focus {
@@ -912,6 +922,14 @@ footer .inner-content p a {
 	color: #fff;
 }
 
+.contact-form input::before {
+	content:span;
+	color:red;
+}
+
+.contact-form span::before  {
+	color:red;
+}
 /* Responsive Style */
 @media (max-width: 768px) {
 	.banner .text-content {
