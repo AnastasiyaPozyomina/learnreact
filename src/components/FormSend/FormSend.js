@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
-import EmailInput from './EmailInput';
-import MessageTextarea from './MessageTextarea';
-import NameInput from './NameInput';
-import SubjectInput from './SubjectInput';
 import {useForm} from 'react-hook-form';
+
 
 export default function FormSend () {
   const {register, handleSubmit, watch, errors} = useForm ();
@@ -34,11 +31,10 @@ export default function FormSend () {
                     pattern: /[A-Za-z]+$/i,
                   })}
                 />
-                {errors.firstName &&
-                  errors.firstName.type === 'required' &&
-                  <p>This is required</p>}
+               {errors.firstName && errors.firstName.type === 'required' && <p>This is required</p>}
+                
                 {errors.firstName && errors.firstName.type === 'minLength' &&
-                  <p>This is field required min length of 2</p>}
+                  <p>This is field required min length of 2</p> } 
                 {errors.firstName && errors.firstName.type === 'pattern' &&
                   <p>Only English</p>}
               </div>
