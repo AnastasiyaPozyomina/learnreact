@@ -1,23 +1,23 @@
 import React, {Component} from 'react';
-import FormSend from '../FormSend/FormSend';
 import CustomizedAccordions from '../Accordion/Accordion';
+import ContactForm from '../ContactForm/ContactForm';
 
 export default class SendMessage extends Component {
   render () {
     return (
       <div>
-        <div class="send-message">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="section-heading">
+        <div className="send-message">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="section-heading">
                   <h2>Send us a Message</h2>
                 </div>
               </div>
-              <div class="col-md-8">
-                <FormSend />
+              <div className="col-md-8">
+                <ContactForm />
               </div>
-              <div class="col-md-4">
+              <div className="col-md-4">
                <CustomizedAccordions   />
               </div>
             </div>

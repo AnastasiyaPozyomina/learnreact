@@ -1,23 +1,25 @@
 import React, {Component} from 'react';
 import {useForm} from 'react-hook-form';
 
-export default function FormSend () {
-  const {register, handleSubmit, watch, errors} = useForm ();
+export default function ContactForm () {
+  const {register, handleSubmit, errors} = useForm ();
   const onSubmit = data => console.log (data);
-
-  console.log (watch ('firstName'));
+  const styles = {
+    input: {},
+    textarea: {},
+  };
   return (
     <div>
-      <div class="contact-form">
+      <div className="contact-form">
         <form
           id="contact"
           action=""
           method="post"
           onSubmit={handleSubmit (onSubmit)}
         >
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-              <div class="input-wrapper">
+          <div className="row">
+            <div className="col-lg-12 col-md-12 col-sm-12">
+              <div className="input-wrapper">
                 <input
                   type="text"
                   name="firstName"
@@ -29,7 +31,12 @@ export default function FormSend () {
                     minLength: 2,
                     pattern: /[A-Za-z]+$/i,
                   })}
+                  style={{
+                    ...styles.input,
+                    borderColor: errors.firstName && 'red',
+                  }}
                 />
+
                 {errors.firstName &&
                   errors.firstName.type === 'required' &&
                   <p>This is required</p>}
@@ -40,20 +47,25 @@ export default function FormSend () {
                 {errors.firstName &&
                   errors.firstName.type === 'pattern' &&
                   <p>Only English</p>}
+
               </div>
             </div>
-            <div class="col-lg-12 col-md-12 col-sm-12">
-              <div class="input-wrapper">
+            <div className="col-lg-12 col-md-12 col-sm-12">
+              <div className="input-wrapper">
                 <input
                   type="text"
                   name="email"
-                  class="form-control"
+                  className="form-control"
                   id="email"
                   placeholder="E-Mail Address"
                   ref={register ({
                     required: true,
                     pattern: /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/,
                   })}
+                  style={{
+                    ...styles.input,
+                    borderColor: errors.email && 'red',
+                  }}
                 />
                 {errors.email &&
                   errors.email.type === 'required' &&
@@ -63,12 +75,12 @@ export default function FormSend () {
                   <p>Email was entered incorrectly</p>}
               </div>
             </div>
-            <div class="col-lg-12 col-md-12 col-sm-12">
-              <div class="input-wrapper">
+            <div className="col-lg-12 col-md-12 col-sm-12">
+              <div className="input-wrapper">
                 <input
                   name="subject"
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   id="subject"
                   placeholder="Subject"
                   ref={register ({
@@ -76,6 +88,10 @@ export default function FormSend () {
                     minLength: 4,
                     pattern: /^[A-Za-z0-90-9!#,$%&'*+/=?^_`{|}~-\s]+$/i,
                   })}
+                  style={{
+                    ...styles.input,
+                    borderColor: errors.subject && 'red',
+                  }}
                 />
                 {errors.subject &&
                   errors.subject.type === 'required' &&
@@ -88,12 +104,12 @@ export default function FormSend () {
                   <p>Only English</p>}
               </div>
             </div>
-            <div class="col-lg-12">
-              <div class="input-wrapper">
+            <div className="col-lg-12">
+              <div className="input-wrapper">
                 <textarea
                   name="message"
                   rows="6"
-                  class="form-control"
+                  className="form-control"
                   id="message"
                   placeholder="Your Message"
                   ref={register ({
@@ -102,6 +118,10 @@ export default function FormSend () {
                     maxLength: 100,
                     pattern: /^[A-Za-z0-90-9,!#$%&'*+/=?^_`{|}~-\s]+$/i,
                   })}
+                  style={{
+                    ...styles.textarea,
+                    borderColor: errors.message && 'red',
+                  }}
                 />
                 {errors.message &&
                   errors.message.type === 'required' &&
@@ -117,7 +137,7 @@ export default function FormSend () {
                   <p>Only English</p>}
               </div>
             </div>
-            <div class="col-lg-12">
+            <div className="col-lg-12">
               <button className="filled-button" type="submit">
                 Send Message
               </button>

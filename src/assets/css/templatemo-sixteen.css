@@ -860,11 +860,9 @@ footer .inner-content p a {
 	height: 44px;
 	display: inline-block;
 	line-height: 42px;
-	border: 1px solid #eee;
+    border: 1px solid #eee;
 	border-radius: 0px;
 }
-
-
 
 .input-wrapper {
 margin-bottom: 30px;
@@ -879,12 +877,12 @@ flex-direction:column;
 
 .contact-form input:focus {
 	box-shadow: none;
-	border: 2px solid grey;
+	border: 1px solid grey;
 }
 
-.contact-form input:focus.p {
-	box-shadow: none;
-	border: 2px solid red;
+.contact-form textarea p {
+	color:red;
+	text-align: left;
 }
 
 .contact-form textarea {
@@ -923,7 +921,10 @@ flex-direction:column;
 	outline: none;
 	cursor: pointer;
 	margin-top: 20px;
+
 }
+
+
 
 .contact-form .filled-button:hover {
 	background-color: #121212;
