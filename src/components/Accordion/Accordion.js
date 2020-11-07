@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import MuiAccordion from '@material-ui/core/Accordion';
 import MuiAccordionSummary from '@material-ui/core/AccordionSummary';
 import MuiAccordionDetails from '@material-ui/core/AccordionDetails';
@@ -8,6 +8,7 @@ import './Accordion.css';
 
 const Accordion = withStyles ({
   root: {
+    overflowAnchor: 'none', 
     backgroundColor: 'fff',
     boxShadow: 'none',
     '&:not(:last-child)': {
