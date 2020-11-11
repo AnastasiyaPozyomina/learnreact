@@ -1,44 +1,38 @@
 import React, {Component} from 'react';
-import './List.css';
+import Gallery from '../Gallery/Gallery';
+import './Product.css';
+import StarRating from '../Rating/StarRating';
 
 
 export default class ProductCard extends Component {
   render () {
     return (
-      <div>
+      <div className="card-product">
         <div className="container">
           <div className="row">
-            <div className="col-md-12">
-              <div className="section-heading">
-                <h2>{this.props.title}</h2>
-              </div>
-            </div>
+
             <div className="col-md-6">
-              <div className="left-content">
-                <h4>Who we are &amp; What we do?</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
-                  voluptate nihil eum consectetur similique? Consectetur, quod,
-                  incidunt, harum nisi dolores delectus reprehenderit voluptatem
-                  perferendis dicta dolorem non blanditiis ex fugiat. Lorem
-                  ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum
-                  dolor sit amet, consectetur adipisicing elit. Et,
-                  consequuntur, modi mollitia corporis ipsa voluptate corrupti
-                  eum ratione ex ea praesentium quibusdam? Aut, in eum facere
-                  corrupti necessitatibus perspiciatis quis.
-                </p>
+              <Gallery />
+            </div>
+            <div className="col-md-6 about-product">
+              <h2>
+              Floral Print Velvet Dress
+              </h2>
+              <h6 className="price">200$</h6>
+              <StarRating />
+              <p>Color: Blue Multi(BLMU)</p>
+              <p>
+              Rich florals and luscious velvet make an enchanting combo. This bodycon goes bold with a deep surplice styling in an eye-catching, artistic print. Slip into some glitzy stilettos and you're set to steal the show.
+              </p>
+              <button type="text" className="button-card">
+                    Add To Cart
+                  </button>
+            </div>
             
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="right-image">
-                <img src="images/feature-image.jpg" alt="" />
-              </div>
-            </div>
           </div>
+          
         </div>
       </div>
     );
   }
 }
-

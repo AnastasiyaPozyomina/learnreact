@@ -28,6 +28,7 @@ export default class App extends React.Component {
             <Route exact path="/our-products" component={OurProducts} />
             <Route   path="/our-products/:id">
                <ProductCard /> 
+            {/* <Route path="/product/:productId" component={ProductShow}/> */}
             </Route> 
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />

@@ -1,8 +1,7 @@
 import React from 'react';
 import OwlCarousel from 'react-owl-carousel';
 
-export default class Clients extends React.Component {
-  render () {
+export default function Clients () {
     return (
       <div className="happy-clients">
         <div className="container">
@@ -46,4 +45,4 @@ export default class Clients extends React.Component {
       </div>
     );
   }
-}
+

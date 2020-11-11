@@ -9,7 +9,7 @@ import Services from "../../components/Services/Services";
 export default class About extends React.Component {
   render () {
     return (
-      <div>
+      <>
         <MainContent
           title={'OUR COMPANY'}
           subtitle={'ABOUT US'}
@@ -22,7 +22,7 @@ export default class About extends React.Component {
         <Services />
         <Clients />
         <Footer />
-      </div>
+      </>
     );
   }
 }

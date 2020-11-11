@@ -14,7 +14,6 @@ export default class ProductList extends React.Component {
       sort: '',
     };
   }
-
   sortProducts = event => {
     const sort = event.target.value;
     this.setState (state => ({
