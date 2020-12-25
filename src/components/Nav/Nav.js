@@ -61,6 +61,15 @@ export default class Nav extends React.Component {
               </li>
               <li className="nav-item">
                 <NavLink
+                  to="/blog"
+                  style={{color: this.state.color}}
+                  className="nav-link"
+                >
+                  Blog
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
                   style={{color: this.state.color}}
                   className="nav-link"
                   to="/contact"

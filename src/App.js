@@ -13,6 +13,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import ProductsPage from './components/Products/ProductsPage';
 import Product from './components/Products/Product';
 import ProductPage from './components/Products/ProductPage';
+import Blog from './pages/Blog/Blog';
 
 
 export default function App() {
@@ -26,6 +27,7 @@ export default function App() {
           <Route exact path="/products" component={ProductsPage} />
           <Route  path="/product/:product" component={ProductPage} />
           <Route exact path="/about" component={About} />
+          <Route exact path="/blog" component={Blog} />
           <Route exact path="/contact" component={Contact} />
           <Redirect from="/" to="/home" />
         </Switch>

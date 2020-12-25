@@ -1,12 +1,19 @@
 import React from "react";
+import FetchedPosts from "../../components/Blog/FetchedPosts";
+import MainContent from "../../components/MainContent/MainContent";
 import "./Blog.css";
 
-export default class Blog extends React.Component {
+ class Blog extends React.Component {
   render() {
     return (
       <div>
-        <h1>Блог</h1>
+      <MainContent
+      title={'Blog'}
+      className={'page-heading about-heading header-text'}
+      />
+      <FetchedPosts />
       </div>
     );
   }
 }
+export default Blog;

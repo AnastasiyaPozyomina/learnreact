@@ -1,7 +1,6 @@
 // после установки пакетов express, body-parser, mongoose, shortid
 const express = require ("express");
 const bodyParser = require ("body-parser");
-//Импортировать модуль mongoose
 const mongoose = require ("mongoose");
 const shortid = require ("shortid");
 

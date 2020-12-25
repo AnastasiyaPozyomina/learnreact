@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {Provider} from 'react-redux';
+import store from './store/store.js';
 
 ReactDOM.render (
   <React.StrictMode>
-    <App title="My site" />
+    <Provider store={store}>
+      <App title="My site" />
+    </Provider>
   </React.StrictMode>,
   document.getElementById ('root')
 );
