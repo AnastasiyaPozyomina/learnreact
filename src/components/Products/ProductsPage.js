@@ -3,13 +3,12 @@ import Filter from '../Filter';
 import data from '../../data.json';
 import Product from './Product';
 import './Product.css';
-import ProductPage from './ProductPage';
+import {connect} from 'react-redux';
+import {fetchProducts} from '../../store/actions/productActions';
 
-
-export default function ProductsPage () {
+function ProductsPage () {
   const products = data.products;
   const productsComponents = products.map (product => (
-  
     <Product
       key={product._id}
       title={product.title}
@@ -19,8 +18,8 @@ export default function ProductsPage () {
       availableSizes={product.availableSizes}
       star={product.star}
     />
-
   ));
+
   return (
     <div className="products">
       <div className="container">
@@ -33,9 +32,7 @@ export default function ProductsPage () {
           <div className="col-md-12">
             <div className="filters-content">
               <ul className="row grid">
-
                 {productsComponents}
-
               </ul>
               <div className="col-md-12">
                 <ul className="pages">
@@ -66,3 +63,5 @@ export default function ProductsPage () {
     </div>
   );
 }
+
+export default ProductsPage;

@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import formatCurrency from '../../util';
 import StarRating from '../Rating/StarRating';
 import './Product.css';
-
+import {connect} from 'react-redux';
 
 
   const Product = (props) => {
@@ -13,7 +13,7 @@ import './Product.css';
         <img src={props.image} alt={props.title} />
       </Link>
       <div className="down-content">
-        <Link to={"product/:product"}><h4>{props.title}</h4></Link>
+        <Link to={"product/:product"}><h4>props.{props.title}</h4></Link>
         <div className="d-flex justify-content-between">
           <StarRating stars={props.star} />
           <span>Reviews (48)</span>
@@ -29,4 +29,10 @@ import './Product.css';
   );
 }
 
-export default Product;
+function mapStateToProps (state) {
+  return {
+    product: state
+  }
+}
+
+export default connect(mapStateToProps) (Product)

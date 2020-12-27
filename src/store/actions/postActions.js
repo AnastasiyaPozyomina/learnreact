@@ -42,7 +42,7 @@ import {
       try {
         dispatch (showLoader ());
         const response = await fetch (
-          'https://jsonplaceholder.typicode.com/posts?_limit=8'
+          'https://jsonplaceholder.typicode.com/posts?_limit=20'
         );
         const json = await response.json ();
         setTimeout (() => {

@@ -14,9 +14,12 @@ import ProductsPage from './components/Products/ProductsPage';
 import Product from './components/Products/Product';
 import ProductPage from './components/Products/ProductPage';
 import Blog from './pages/Blog/Blog';
+import Post from './components/Blog/Post';
+import PostPage from './components/Blog/PostPage.js';
 
 
 export default function App() {
+
   return (
     <BrowserRouter>
       <div className="App">
@@ -28,7 +31,8 @@ export default function App() {
           <Route  path="/product/:product" component={ProductPage} />
           <Route exact path="/about" component={About} />
           <Route exact path="/blog" component={Blog} />
-          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/posts/:id"  component={PostPage} />
+          <Route exact path="/contact" component={Contact}/>
           <Redirect from="/" to="/home" />
         </Switch>
       </div>
