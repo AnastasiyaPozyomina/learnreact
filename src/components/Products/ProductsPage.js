@@ -6,7 +6,7 @@ import './Product.css';
 import {connect} from 'react-redux';
 import {fetchProducts} from '../../store/actions/productActions';
 
-function ProductsPage () {
+export default  () => {
   const products = data.products;
   const productsComponents = products.map (product => (
     <Product
@@ -17,6 +17,7 @@ function ProductsPage () {
       price={product.price}
       availableSizes={product.availableSizes}
       star={product.star}
+      product={product}
     />
   ));
 
@@ -64,4 +65,4 @@ function ProductsPage () {
   );
 }
 
-export default ProductsPage;
+

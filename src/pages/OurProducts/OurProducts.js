@@ -1,6 +1,7 @@
 import React from "react";
 import MainContent from "../../components/MainContent/MainContent";
-import Products from "../../components/Products/ProductsPage";
+import ProductsPage from "../../components/Products/ProductsPage";
+
 
 export default class OurProducts extends React.Component {
   render() {
@@ -11,7 +12,7 @@ export default class OurProducts extends React.Component {
           subtitle={"NEW ARRIVALS"}
           className={"page-heading products-heading header-text"}
         />
-        <Products />
+        <ProductsPage />
       </div>
     );
   }

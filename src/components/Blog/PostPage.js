@@ -1,20 +1,14 @@
-import React, { useContext, useState } from 'react';
-import { useParams } from 'react-router';
-import Post from './Post';
+import React from 'react'
 import './PostPage.css';
 
 
-
-function PostPage () {
- 
+   function PostPage(post) {
   return (
     <div className="title">
-      <h1>id:</h1>
-      <h2>title:</h2>
-      </div>
-    
-  
+      <h1>id:{post.id}</h1>
+      <h2>title:{post.title}</h2>
+    </div>
   );
-};
+}
 
- export default PostPage;
+export default PostPage;
