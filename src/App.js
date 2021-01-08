@@ -10,9 +10,10 @@ import OurProducts from './pages/OurProducts/OurProducts';
 import Home from './pages/Home/Home';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-import ProductsPage from './components/Products/ProductsPage';
-import ProductPage from './components/Products/ProductPage';
+import Product from './components/Products/Product';
 import Blog from './pages/Blog/Blog';
+import Post from './components/Blog/Post';
+import ProductPage from './components/Products/ProductPage';
 import PostPage from './pages/PostPage/PostPage';
 
 
@@ -25,8 +26,7 @@ export default function App() {
         <Switch>
           <Route exact path="/home" component={Home} />
           <Route exact path="/our-products" component={OurProducts} />
-          <Route exact path="/products" component={ProductsPage} />
-          <Route  path="/product/:product" component={ProductPage} />
+          <Route exact path="/product/:_id" children={ProductPage} />
           <Route exact path="/about" component={About} />
           <Route exact path="/blog" component={Blog} />
           <Route exact path="/posts/:postId"  component={PostPage} />

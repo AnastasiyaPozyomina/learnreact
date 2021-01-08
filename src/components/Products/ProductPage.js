@@ -4,7 +4,7 @@ import './Product.css';
 import StarRating from '../Rating/StarRating';
 import data from '../../data.json';
 
-export default function ProductPage (props) {
+export default function ProductPage (product){
   return (
     <div className="card-product">
       <div className="container">
@@ -14,9 +14,9 @@ export default function ProductPage (props) {
           </div>
           <div className="col-md-6 about-product">
             <h2>
-            {props.title}
+            {product.title}
             </h2>
-            <h6 className="price">{props.price}</h6>
+            <h6 className="price">{product.price}</h6>
             <StarRating />
             <p>Color: Blue Multi(BLMU)</p>
             <p>

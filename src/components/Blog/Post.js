@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import './Post.css';
 
-export default ({post}) => {
+function Post({post}) {
   return (
     <div className="col-md-4">
       <div className="card">
@@ -17,3 +17,5 @@ export default ({post}) => {
     </div>
   );
 };
+
+export default Post;
