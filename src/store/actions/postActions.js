@@ -30,6 +30,8 @@ import {
       }, 3000);
     };
   }
+
+
   
   export function hideAlert () {
     return {
@@ -42,7 +44,7 @@ import {
       try {
         dispatch (showLoader ());
         const response = await fetch (
-          'https://jsonplaceholder.typicode.com/posts?_limit=20'
+          'https://jsonplaceholder.typicode.com/posts?_limit=50'
         );
         const json = await response.json ();
         setTimeout (() => {

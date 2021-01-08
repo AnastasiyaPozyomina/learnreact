@@ -1,3 +1,24 @@
 .card {
-width: 18rem;
+    height: 190px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.catd-title {
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10x;
+    color: #1a6692;
+}
+
+.card-date {
+    font-size: 10px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.filter-posts {
+    margin: 15px 10px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
 }
