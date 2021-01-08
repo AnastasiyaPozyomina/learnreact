@@ -17,7 +17,6 @@ function PostPage () {
           <p className="post-date">{post.date}</p>
           <h4 className="post-title">{post.title}</h4>
           <p className="post-body">{post.body}</p>
-
         </div>
       </div>
     </div>

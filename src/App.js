@@ -20,11 +20,11 @@ import PostPage from './pages/PostPage/PostPage';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/learnreact/">
       <div className="App">
         <Header />
         <Switch>
-          <Route exact path="/home" component={Home} />
+          <Route exact path="/home/" component={Home} />
           <Route exact path="/our-products" component={OurProducts} />
           <Route exact path="/product/:_id" children={ProductPage} />
           <Route exact path="/about" component={About} />

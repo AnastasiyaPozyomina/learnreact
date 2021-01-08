@@ -13,7 +13,7 @@ export default () => {
     <>
       <MainContent
         title={'Blog'}
-        className={'page-heading about-heading header-text'}
+        className={'page-heading blog-heading header-text'}
       />
       <div className="container">
         <div className="row">
