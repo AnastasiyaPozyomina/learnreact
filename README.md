@@ -143,6 +143,7 @@ React Transition Group https://reactcommunity.org/react-transition-group/
 React Spring https://www.react-spring.io/
 Motion Api https://www.framer.com/motion/  https://www.npmjs.com/package/framer-motion
 ✓ React Awesome Reveal https://react-awesome-reveal.morello.dev/docs/
+react-awesome-slider https://github.com/rcaferati/react-awesome-slider
 
 ## Слайдеры
 ✓ react-image-gallery https://www.linxtion.com/demo/react-image-gallery/

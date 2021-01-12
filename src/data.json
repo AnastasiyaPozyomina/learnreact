@@ -2,8 +2,8 @@
     "products": [{
             "_id": 1,
             "image": "./images/dresses/dress1.jpg",
-            "image1": "./images/dresses/dress1.1.jpg",
-            "image2": "./images/dresses/dress1.2.jpg",
+            "image2": "./images/dresses/dress1.1.jpg",
+            "image3": "./images/dresses/dress1.2.jpg",
             "title": "Ruched Maxi Dress",
             "description": "Casual beauty is a breeze in this short sleeve maxi dress. Let this easy-to-wear piece take you through the season with the simple sexy charm of its crisscross V-neck, figure-flattering ruching and alluring side slit.",
             "price": 44,

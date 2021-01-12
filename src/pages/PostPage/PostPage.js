@@ -2,7 +2,7 @@ import React from 'react';
 import './PostPage.css';
 
 import {useSelector} from 'react-redux';
-import {Redirect, useLocation, useParams} from 'react-router-dom';
+import {useParams} from 'react-router-dom';
 
 function PostPage () {
   const {postId} = useParams ();

@@ -3,21 +3,21 @@ import Filter from '../Filter';
 import data from '../../data.json';
 import Product from './Product';
 import './Product.css';
-import {connect} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 import {fetchProducts} from '../../store/actions/productActions';
 
-export default  () => {
-  const products = data.products;
-  const productsComponents = products.map (product => (
+export default () => {
+  // const products = data.products;
+  const dispatch = useDispatch ();
+  const products = useSelector (state => state.products.fetchedProducts);
+  const productsList = products.map (product => (
     <Product
       key={product._id}
+      product={product}
       title={product.title}
       image={product.image}
-      description={product.description}
       price={product.price}
-      availableSizes={product.availableSizes}
       star={product.star}
-      product={product}
     />
   ));
 
@@ -33,9 +33,16 @@ export default  () => {
           <div className="col-md-12">
             <div className="filters-content">
               <ul className="row grid">
-                {productsComponents}
+                {productsList}
               </ul>
+
               <div className="col-md-12">
+                <button
+                  className="filled-button"
+                  onClick={() => dispatch (fetchProducts ())}
+                >
+                  LOAD MORE
+                </button>
                 <ul className="pages">
                   <li>
                     <a href="#">1</a>
@@ -63,6 +70,4 @@ export default  () => {
       </div>
     </div>
   );
-}
-
-
+};
