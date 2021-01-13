@@ -1,10 +1,11 @@
 import React from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {fetchPosts} from '../../store/actions/postActions';
-import {Loader} from '../Loader';
+import ButtonSend from '../ButtonSend/ButtonSend';
+import {Loader} from '../Loader/Loader';
 import Post from './Post';
 
- export default  () => {
+export default () => {
   const dispatch = useDispatch ();
   const posts = useSelector (state => state.posts.fetchedPosts);
   const loading = useSelector (state => state.app.loading);
@@ -13,41 +14,52 @@ import Post from './Post';
   if (loading) {
     return <Loader />;
   }
-  if (!posts.length) {
+  if (posts.length < 8) {
     return (
-      <button
-      className="filled-button"
-      onClick={() => dispatch (fetchPosts ())}
-    >
-      LOAD MORE
-    </button>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-12">
+            <div className="filter filter-posts d-flex justify-content-between">
+              <div className="filter-result"> Posts</div>
+              <div className="filter-size">
+                Filter
+                <select>
+                  <option value="ALL">ALL</option>
+                  <option value="Date">Date</option>
+                  <option value="A">A-Z</option>
+                  <option value="Z">Z-A</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          {postsList}
+        </div>
+        <ButtonSend
+                  text={'LOAD MORE'}
+                  onClick={() => dispatch (fetchPosts ())}
+                />
+      </div>
     );
   }
   return (
     <div className="container">
-      <div className="row">
-        <div className="col-md-12">
-          <div className="filter filter-posts d-flex justify-content-between">
-            <div className="filter-result"> Posts</div>
-            <div className="filter-size">
-              Filter
-              <select>
-                <option value="ALL">ALL</option>
-                <option value="Date">Date</option>
-                <option value="A">A-Z</option>
-                <option value="Z">Z-A</option>
-              </select>
+        <div className="row">
+          <div className="col-md-12">
+            <div className="filter filter-posts d-flex justify-content-between">
+              <div className="filter-result"> Posts</div>
+              <div className="filter-size">
+                Filter
+                <select>
+                  <option value="ALL">ALL</option>
+                  <option value="Date">Date</option>
+                  <option value="A">A-Z</option>
+                  <option value="Z">Z-A</option>
+                </select>
+              </div>
             </div>
           </div>
+          {postsList}
         </div>
-        {postsList}
       </div>
-      <button
-        className="filled-button"
-        onClick={() => dispatch (fetchPosts ())}
-      >
-        LOAD MORE
-      </button>
-    </div>
   );
 };

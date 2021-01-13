@@ -1,2 +1,15 @@
+.product-title {
+    color: #1a6692;
+    height: 77px;
+    padding: 10px;
+}
 
+.product-title:hover {
+    color: #f33f3f;
+}
 
+.down-content {
+    border: 1px solid #eee;
+    margin-bottom: 30px;
+    padding: 20px;
+}

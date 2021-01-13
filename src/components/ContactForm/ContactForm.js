@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import {useForm} from 'react-hook-form';
+import ButtonSend from '../ButtonSend/ButtonSend';
+import './ContactForm.css';
 
 export default function ContactForm () {
   const {register, handleSubmit, errors} = useForm ();
@@ -137,10 +139,11 @@ export default function ContactForm () {
                   <p>Only English</p>}
               </div>
             </div>
-            <div className="col-lg-12">
-              <button className="filled-button" type="submit">
-                Send Message
-              </button>
+            <div className="col-lg-12 button-position">
+            <ButtonSend
+                  text={'Send Message'}
+                  
+                />
             </div>
           </div>
         </form>

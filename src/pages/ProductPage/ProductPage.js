@@ -6,6 +6,7 @@ import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
 import {useSelector} from 'react-redux';
 import {useParams} from 'react-router-dom';
+import ButtonSend from '../../components/ButtonSend/ButtonSend';
 
 export default function ProductPage () {
   const {productId} = useParams ();
@@ -29,19 +30,25 @@ export default function ProductPage () {
             <h6 className="price">{product.price}$</h6>
             <StarRating stars={product.star} />
             <p>{product.description}</p>
-            <button type="text" className="button-card">
-              Add To Cart
-            </button>
+            <ButtonSend text={'ADD TO CART'} />
             <div className="row mt-3">
-            <div className="col-md-6">
-            <img className="image-postpage" src={product.image2} alt={product.title} />
+              <div className="col-md-6">
+                <img
+                  className="image-postpage"
+                  src={product.image2}
+                  alt={product.title}
+                />
+              </div>
+              <div className="col-md-6">
+                <img
+                  className="image-postpage"
+                  src={product.image3}
+                  alt={product.title}
+                />
+              </div>
             </div>
-            <div className="col-md-6">
-            <img className="image-postpage" src={product.image3} alt={product.title} />
           </div>
-          </div>
-          </div>
-          
+
         </div>
       </div>
     </div>

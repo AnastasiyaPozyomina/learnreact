@@ -4,13 +4,12 @@
     margin-bottom: 15px;
 }
 
-.catd-title {
+.card-title {
     height: 50px;
     margin-top: 10px;
     margin-bottom: 10x;
-    color: #1a6692;
+    
 }
-
 .card-date {
     font-size: 10px;
     text-align: right;

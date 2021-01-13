@@ -1,7 +1,5 @@
 import React from 'react';
 
-export default class Button extends React.Component {
-  render () {
-    return <a href="#" className="filled-button"> {this.props.text} </a>;
-  }
+export default function Button (props) {
+  return <a href="#" className="filled-button"> {props.text} </a>;
 }

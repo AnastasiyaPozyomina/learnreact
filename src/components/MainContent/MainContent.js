@@ -6,13 +6,7 @@ export default function MainContent (props) {
   const subtitle = <h4>{props.subtitle}</h4>;
 
   return (
-    <div
-      className={className}
-      // style={{
-      //   backgroundImage: `url(${process.env.PUBLIC_URL + '/images/about-heading.jpg'})`,
-      // }}
-    >
-
+    <div className={className}>
       <div className="container">
         <div className="row">
           <div className="col-md-12">
