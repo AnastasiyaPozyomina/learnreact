@@ -22,7 +22,7 @@ export default class Nav extends React.Component {
     return (
       <nav className="navbar navbar-expand-lg">
         <div className="container">
-          <NavLink to="/" className="navbar-brand">
+          <NavLink to="/home" className="navbar-brand">
             <h2 style={{color: this.state.color}}>
               Sixteen <em>Clothing</em>
             </h2>
@@ -42,7 +42,7 @@ export default class Nav extends React.Component {
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
                 <NavLink
-                  to="/"
+                  to="/home"
                   style={{color: this.state.color}}
                   className="nav-link"
                 >

@@ -33,7 +33,6 @@ if (products.length < 10) {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="filters-content">
                 <ul className="row grid">
                   {productsList}
                 </ul>
@@ -45,7 +44,6 @@ if (products.length < 10) {
                 />
               </div>
             </div>
-          </div>
         </div>
       </div>
     );
@@ -56,12 +54,10 @@ if (products.length < 10) {
       <div className="container">
         <div className="row">
           <div className="col-md-12">
-            <div className="filters-content">
               <ul className="row grid">
                 {productsList}
               </ul>
             </div>
-          </div>
         </div>
       </div>
     </div>

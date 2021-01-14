@@ -19,3 +19,5 @@ export function fetchProducts () {
     }
   };
 }
+
+console.log(showAlert())

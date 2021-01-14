@@ -2,7 +2,7 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 import './Error.css';
 
-const Error = () => {
+function Error () {
   return (
     <div className="NotFind">
       <NavLink className="link-error" to="/">Go Back</NavLink>

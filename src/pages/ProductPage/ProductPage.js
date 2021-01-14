@@ -4,12 +4,20 @@ import StarRating from '../../components/Rating/StarRating';
 import {useSelector} from 'react-redux';
 import {useParams} from 'react-router-dom';
 import ButtonSend from '../../components/ButtonSend/ButtonSend';
+import { Loader } from '../../components/Loader/Loader';
+
 
 export default function ProductPage () {
   const {productId} = useParams ();
+  const loading = useSelector (state => state.app.loading);
   const product = useSelector (state =>
     state.products.fetchedProducts.find (product => product._id == productId)
   );
+
+  if (loading) {
+    return <Loader />;
+  }
+
   return (
     <div className="card-product">
       <div className="container">
@@ -20,7 +28,6 @@ export default function ProductPage () {
               src={product.image}
               alt={product.title}
             />
-
           </div>
           <div className="col-md-6 about-product">
             <h2> {product.title}</h2>
@@ -45,7 +52,6 @@ export default function ProductPage () {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>

@@ -19,7 +19,7 @@ export default () => {
   if (posts.length < 8) {
     return (
       <div className="container">
-        <div className="row">
+        <div className="row posts">
           <div className="col-md-12" />
           {postsList}
         </div>
@@ -32,7 +32,7 @@ export default () => {
   }
   return (
     <div className="container">
-      <div className="row">
+      <div className="row posts">
         <div className="col-md-12" />
         {postsList}
       </div>
