@@ -17,10 +17,11 @@ import Error from './pages/404/Error';
 
 export default function App () {
   return (
-    <BrowserRouter basename="/learnreact/">
+    <BrowserRouter basename="/learnreact">
       <div className="App">
         <Header />
         <Switch>
+          
           <Route exact path="/home" component={Home} />
           <Route exact path="/our-products" component={OurProducts} />
           <Route exact path="/products/:productId" component={ProductPage} />
