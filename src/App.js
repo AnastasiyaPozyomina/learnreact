@@ -3,7 +3,7 @@ import './App.css';
 import './assets/css/templatemo-sixteen.css';
 import './assets/css/fontawesome.css';
 import Header from './components/Header/Header';
-import {BrowserRouter, Redirect, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import Contact from './pages/Contacts/Contacts';
 import About from './pages/About/About';
 import OurProducts from './pages/OurProducts/OurProducts';
@@ -21,7 +21,7 @@ export default function App () {
       <div className="App">
         <Header />
         <Switch>
-          
+          <Route exact path="/" component={Home} />
           <Route exact path="/home" component={Home} />
           <Route exact path="/our-products" component={OurProducts} />
           <Route exact path="/products/:productId" component={ProductPage} />
