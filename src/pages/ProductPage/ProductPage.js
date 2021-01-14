@@ -1,9 +1,6 @@
 import React from 'react';
-
 import './ProductPage.css';
 import StarRating from '../../components/Rating/StarRating';
-import AwesomeSlider from 'react-awesome-slider';
-import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
 import {useSelector} from 'react-redux';
 import {useParams} from 'react-router-dom';
 import ButtonSend from '../../components/ButtonSend/ButtonSend';

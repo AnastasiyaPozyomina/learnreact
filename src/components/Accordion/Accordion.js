@@ -8,7 +8,7 @@ import './Accordion.css';
 
 const Accordion = withStyles ({
   root: {
-    overflowAnchor: 'none', 
+    overflowAnchor: 'none',
     backgroundColor: 'fff',
     boxShadow: 'none',
     '&:not(:last-child)': {

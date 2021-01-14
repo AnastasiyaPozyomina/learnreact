@@ -1,8 +1,6 @@
 import React from 'react';
-import Filter from '../Filter';
 import data from '../../data.json';
-import Product from './Product';
-import './Product.css';
+import Product from '../Products/Product';
 import {useDispatch, useSelector} from 'react-redux';
 import {fetchProducts} from '../../store/actions/productActions';
 import {Loader} from '../Loader/Loader';
@@ -11,7 +9,7 @@ import ButtonSend from '../ButtonSend/ButtonSend';
 export default () => {
   // const products = data.products;
   const dispatch = useDispatch ();
-  const products = useSelector (state => state.products.fetchedProducts);
+  const products = useSelector (state=> state.products.fetchedProducts);
   const loading = useSelector (state => state.app.loading);
   const productsList =
      products && products.map (product => (
@@ -29,16 +27,11 @@ export default () => {
     return <Loader />;
   }
 
-  if (products.length < 10) {
+if (products.length < 10) {
     return (
       <div className="products">
         <div className="container">
           <div className="row">
-            <div className="col-md-12">
-              <div className="filters">
-                <Filter />
-              </div>
-            </div>
             <div className="col-md-12">
               <div className="filters-content">
                 <ul className="row grid">
@@ -62,11 +55,6 @@ export default () => {
     <div className="products">
       <div className="container">
         <div className="row">
-          <div className="col-md-12">
-            <div className="filters">
-              <Filter />
-            </div>
-          </div>
           <div className="col-md-12">
             <div className="filters-content">
               <ul className="row grid">

@@ -1,11 +1,18 @@
 .accordion-wrapper {
     margin-left: 30px;
 }
+
 /*обертка контента*/
 .WithStyles\(ForwardRef\(AccordionDetails\)\)-root-6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
+
 /*контент*/
 .WithStyles\(ForwardRef\(AccordionDetails\)\)-root-6 p {
     margin-bottom: 15px;
@@ -27,14 +34,14 @@
 .MuiAccordionSummary-content p {
     cursor: pointer;
     font-size: 17px;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
     transition: all .3s;
     font-family: 'Poppins', sans-serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     font-weight: 400;
     line-height: 1.5;
-    color: #1a6692;
-    text-align: left;
 
 }
 
@@ -45,4 +52,16 @@
 /* active*/
 .WithStyles\(ForwardRef\(AccordionSummary\)\)-content-4.WithStyles\(ForwardRef\(AccordionSummary\)\)-expanded-5 p {
     color: #f33f3f;
+}
+
+.MuiAccordionDetails-root {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 8px 16px 16px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: justify;
 }

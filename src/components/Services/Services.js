@@ -1,24 +1,22 @@
 import React from 'react';
-import CardService from './CardService';
-import servicesData from './ServicesData';
+import CardService from '../CardService';
+import servicesData from '../ServicesData';
 
-export default class Services extends React.Component {
-  render () {
-    const serviceComponents = servicesData.map (card => (
-      <CardService
-        key={card.id}
-        title={card.title}
-        description={card.description}
-        textbtn={card.textbtn}
-      />
-    ));
+export default function Services () {
+  const serviceComponents = servicesData.map (card => (
+    <CardService
+      key={card.id}
+      title={card.title}
+      description={card.description}
+      textbtn={card.textbtn}
+    />
+  ));
 
-    return (
-      <div className="services">
-        <div className="container">
-          <div className="row"> {serviceComponents} </div>
-        </div>
+  return (
+    <div className="services">
+      <div className="container">
+        <div className="row"> {serviceComponents} </div>
       </div>
-    );
-  }
+    </div>
+  );
 }

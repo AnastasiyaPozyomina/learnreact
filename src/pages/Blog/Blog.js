@@ -1,12 +1,11 @@
 
 import React from 'react';
-import FetchedPosts from '../../components/Blog/FetchedPosts';
+import FetchedPosts from '../../components/FetchedPosts/FetchedPosts';
 import MainContent from '../../components/MainContent/MainContent';
 import './Blog.css';
 import Footer from "../../components/Footer/Footer";
 
 export default () => {
-
   return (
     <>
       <MainContent
