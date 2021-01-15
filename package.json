@@ -1,6 +1,6 @@
 {
-  "homepage": "https://anastasiyapozyomina.github.io",
   "name": "myapp",
+  "homepage": "https://anastasiyapozyomina.github.io/learnreact",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
