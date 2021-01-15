@@ -14,7 +14,8 @@
 }
 
 /*контент*/
-.WithStyles\(ForwardRef\(AccordionDetails\)\)-root-6 p {
+.WithStyles\(ForwardRef\(AccordionDetails\)\)-root-6 p,
+.MuiTypography-body1 {
     margin-bottom: 15px;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 0.00938em;
@@ -64,4 +65,15 @@
     -ms-flex-direction: column;
     flex-direction: column;
     text-align: justify;
+}
+
+.MuiTypography-root .MuiTypography-body1 {
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.00938em;
+    font-size: 14px;
+    font-weight: 300;
+    color: #4a4a4a;
+    line-height: 24px;
+    text-align: left;
 }
