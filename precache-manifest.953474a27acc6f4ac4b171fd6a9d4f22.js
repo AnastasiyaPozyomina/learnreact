@@ -1,35 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e74979187f0e7be8b825bd78352816e9",
+    "revision": "d1a3c75cab471ac6e188baa809471082",
     "url": "/learnreact/index.html"
   },
   {
-    "revision": "032c2a6927d278d9ae00",
+    "revision": "8401c4e578e1786d6151",
     "url": "/learnreact/static/css/2.828be9a0.chunk.css"
   },
   {
-    "revision": "5b4ebc945add82404313",
-    "url": "/learnreact/static/css/main.5cc04d95.chunk.css"
+    "revision": "124b5e7b576d77595f4e",
+    "url": "/learnreact/static/css/main.95db3d24.chunk.css"
   },
   {
-    "revision": "032c2a6927d278d9ae00",
-    "url": "/learnreact/static/js/2.7c0dcfe6.chunk.js"
+    "revision": "8401c4e578e1786d6151",
+    "url": "/learnreact/static/js/2.91cfc7eb.chunk.js"
   },
   {
     "revision": "1c42f926d85df35b12ef99c84c58de1e",
-    "url": "/learnreact/static/js/2.7c0dcfe6.chunk.js.LICENSE.txt"
+    "url": "/learnreact/static/js/2.91cfc7eb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5b4ebc945add82404313",
-    "url": "/learnreact/static/js/main.3fe69f2b.chunk.js"
+    "revision": "124b5e7b576d77595f4e",
+    "url": "/learnreact/static/js/main.57682318.chunk.js"
   },
   {
     "revision": "bb48dbdf78da26e54973",
     "url": "/learnreact/static/js/runtime-main.26c69b6e.js"
   },
   {
-    "revision": "2980083682e94d33a66eef2e7d612519",
-    "url": "/learnreact/static/media/fontawesome-webfont.29800836.svg"
+    "revision": "139e74e298bca37a25d2bd5868552e04",
+    "url": "/learnreact/static/media/fontawesome-webfont.139e74e2.svg"
   },
   {
     "revision": "706450d7bba6374ca02fe167d86685cb",
