@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import ButtonLink from '../ButtonLink';
 
 function AboutCompany (props) {
   return (
@@ -25,8 +25,7 @@ function AboutCompany (props) {
                 eum ratione ex ea praesentium quibusdam? Aut, in eum facere
                 corrupti necessitatibus perspiciatis quis.
               </p>
-              <Link className="filled-button" to="/about">Read More</Link>
-
+              <ButtonLink className="filled-button" text={'Read More'} to={'/about'} />
             </div>
           </div>
           <div className="col-md-6">

@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from './Button/Button';
+import ButtonLink from './ButtonLink';
 
 export default function CardService (props) {
   return (
@@ -10,7 +10,7 @@ export default function CardService (props) {
         </div> <div className="down-content">
           <h4> {props.title} </h4>
           <p> {props.description} </p>
-          <Link text={props.textbtn} />
+          <ButtonLink className="filled-button" text={props.textbtn} to={'#'} />
         </div>
       </div>
     </div>

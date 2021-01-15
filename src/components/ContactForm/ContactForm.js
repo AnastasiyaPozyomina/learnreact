@@ -1,6 +1,6 @@
 import React from 'react';
 import {useForm} from 'react-hook-form';
-import ButtonSend from '../ButtonSend/ButtonSend';
+import Button from '../Button/Button';
 import './ContactForm.css';
 
 export default function ContactForm () {
@@ -139,7 +139,7 @@ export default function ContactForm () {
             </div>
           </div>
           <div className="col-lg-12 button-position">
-            <ButtonSend text={'Send Message'} />
+            <Button text={'Send Message'} />
           </div>
         </div>
       </form>

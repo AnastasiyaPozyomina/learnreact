@@ -1,5 +1,10 @@
 import React from 'react';
+import './Button.css';
 
-export default function Button (props) {
-  return <a href="#" className="filled-button"> {props.text} </a>;
-}
+export default props => {
+  return (
+    <button type="submit" onClick={props.onClick} className="button">
+      {' '}{props.text}{' '}
+    </button>
+  );
+};

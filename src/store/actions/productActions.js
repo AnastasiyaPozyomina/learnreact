@@ -1,5 +1,5 @@
 import {FETCH_PRODUCTS} from '../types';
-import {showLoader, hideLoader, showAlert, hideAlert} from './appActions';
+import {showLoader, hideLoader, showAlert} from './appActions';
 
 export function fetchProducts () {
   return async dispatch => {
@@ -14,10 +14,8 @@ export function fetchProducts () {
         dispatch (hideLoader ());
       }, 500);
     } catch (e) {
-      dispatch (showAlert ('Что-то пошло не так!'));
+      dispatch (showAlert ('Error! Something went wrong!'));
       dispatch (hideLoader ());
     }
   };
 }
-
-console.log(showAlert())

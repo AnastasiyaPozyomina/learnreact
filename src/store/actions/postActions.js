@@ -1,5 +1,5 @@
 import {FETCH_POSTS} from '../types';
-import {showLoader, hideLoader, showAlert, hideAlert} from './appActions';
+import {showLoader, hideLoader, showAlert} from './appActions';
 
 export function fetchPosts () {
   return async dispatch => {
@@ -14,7 +14,7 @@ export function fetchPosts () {
         dispatch (hideLoader ());
       }, 500);
     } catch (e) {
-      dispatch (showAlert ('Что-то пошло не так!'));
+      dispatch (showAlert ('Error! Something went wrong!'));
       dispatch (hideLoader ());
     }
   };

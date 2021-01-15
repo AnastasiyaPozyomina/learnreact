@@ -3,9 +3,8 @@ import './ProductPage.css';
 import StarRating from '../../components/Rating/StarRating';
 import {useSelector} from 'react-redux';
 import {useParams} from 'react-router-dom';
-import ButtonSend from '../../components/ButtonSend/ButtonSend';
-import { Loader } from '../../components/Loader/Loader';
-
+import Button from '../../components/Button/Button';
+import {Loader} from '../../components/Loader/Loader';
 
 export default function ProductPage () {
   const {productId} = useParams ();
@@ -34,7 +33,7 @@ export default function ProductPage () {
             <h6 className="price">{product.price}$</h6>
             <StarRating stars={product.star} />
             <p>{product.description}</p>
-            <ButtonSend text={'ADD TO CART'} />
+            <Button text={'ADD TO CART'} />
             <div className="row mt-3">
               <div className="col-md-6">
                 <img

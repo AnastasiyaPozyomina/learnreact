@@ -4,15 +4,19 @@ import Product from '../Products/Product';
 import {useDispatch, useSelector} from 'react-redux';
 import {fetchProducts} from '../../store/actions/productActions';
 import {Loader} from '../Loader/Loader';
-import ButtonSend from '../ButtonSend/ButtonSend';
+import Button from '../Button/Button';
+import Alert from '../Alert/Alert';
 
 export default () => {
   // const products = data.products;
   const dispatch = useDispatch ();
-  const products = useSelector (state=> state.products.fetchedProducts);
+  const products = useSelector (state => state.products.fetchedProducts);
   const loading = useSelector (state => state.app.loading);
+  const alert = useSelector (state => state.app.alert);
+
   const productsList =
-     products && products.map (product => (
+    products &&
+    products.map (product => (
       <Product
         key={product._id}
         product={product}
@@ -27,23 +31,24 @@ export default () => {
     return <Loader />;
   }
 
-if (products.length < 10) {
+  if (products.length < 10) {
     return (
       <div className="products">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-                <ul className="row grid">
-                  {productsList}
-                </ul>
-              </div>
-              <div className="col-md-12">
-                <ButtonSend
-                  text={'LOAD MORE'}
-                  onClick={() => dispatch (fetchProducts ())}
-                />
-              </div>
+              <ul className="row grid">
+                {productsList}
+              </ul>
             </div>
+            <div className="col-md-12">
+              {alert && <Alert text={alert} />}
+              <Button
+                text={'LOAD MORE'}
+                onClick={() => dispatch (fetchProducts ())}
+              />
+            </div>
+          </div>
         </div>
       </div>
     );
@@ -54,10 +59,10 @@ if (products.length < 10) {
       <div className="container">
         <div className="row">
           <div className="col-md-12">
-              <ul className="row grid">
-                {productsList}
-              </ul>
-            </div>
+            <ul className="row grid">
+              {productsList}
+            </ul>
+          </div>
         </div>
       </div>
     </div>

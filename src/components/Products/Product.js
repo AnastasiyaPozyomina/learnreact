@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import ButtonLink from '../ButtonLink';
 import StarRating from '../Rating/StarRating';
 import './Product.css';
 
@@ -18,11 +19,11 @@ function Product({product}) {
           <h6> ${product.price}</h6>
         </div>
         <div className="text-center mt-3">
-
-          <Link className="filled-button" to={`/products/${product._id}`}>
-            Read more
-          </Link>
-
+          <ButtonLink
+            className="filled-button"
+            text={'Read more'}
+            to={`/products/${product._id}`}
+          />
         </div>
       </div>
     </li>

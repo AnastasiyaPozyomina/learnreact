@@ -3,7 +3,7 @@ import './App.css';
 import './assets/css/templatemo-sixteen.css';
 import './assets/css/fontawesome.css';
 import Header from './components/Header/Header';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {HashRouter, Route, Switch} from 'react-router-dom';
 import Contact from './pages/Contacts/Contacts';
 import About from './pages/About/About';
 import OurProducts from './pages/OurProducts/OurProducts';
@@ -17,7 +17,7 @@ import Error from './pages/404/Error';
 
 export default function App () {
   return (
-    <BrowserRouter basename="/learnreact">
+    <HashRouter basename="/learnreact">
       <div className="App">
         <Header />
         <Switch>
@@ -33,6 +33,6 @@ export default function App () {
           <Route path="/404" component={Error} />
         </Switch>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
