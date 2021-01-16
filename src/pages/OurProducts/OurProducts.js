@@ -1,18 +1,18 @@
-import React from "react";
-import MainContent from "../../components/MainContent/MainContent";
-import Products from "../../components/Products/Products";
+import React from 'react';
+import MainContent from '../../components/MainContent/MainContent';
+import FetchedProducts from '../../components/FetchedProducts/FetchedProducts';
+import Footer from '../../components/Footer/Footer';
 
-export default class OurProducts extends React.Component {
-  render() {
-    return (
-      <div>
-        <MainContent
-          h2={"SIXTEEN PRODUCTS"}
-          h4={"NEW ARRIVALS"}
-          className={"page-heading products-heading header-text"}
-        />
-        <Products />
-      </div>
-    );
-  }
+export default function OurProducts () {
+  return (
+    <>
+      <MainContent
+        title={'SIXTEEN PRODUCTS'}
+        subtitle={'NEW ARRIVALS'}
+        className={'page-heading products-heading header-text'}
+      />
+      <FetchedProducts />
+      <Footer />
+    </>
+  );
 }

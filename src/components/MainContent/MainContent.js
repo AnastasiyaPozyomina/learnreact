@@ -1,24 +1,22 @@
-import React from "react";
+import React from 'react';
 
-export default class MainContent extends React.Component {
-  render() {
-    let className = this.props.className;
-    const h2 = <h2>{this.props.h2}</h2>;
-    const h4 = <h4>{this.props.h4}</h4>;
+export default function MainContent (props) {
+  let className = props.className;
+  const title = <h2>{props.title}</h2>;
+  const subtitle = <h4>{props.subtitle}</h4>;
 
-    return (
-      <div className={className}>
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="text-content">
-                {h4}
-                {h2}
-              </div>
+  return (
+    <div className={className}>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-12">
+            <div className="text-content">
+              {subtitle}
+              {title}
             </div>
           </div>
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 }

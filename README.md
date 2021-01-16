@@ -1,77 +1,205 @@
-## Полезные ссылки:
-<ul>
-<li> Установка material-ui https://material-ui.com/ru/components/</li>
-<li> Установка react-router https://reactrouter.com/web/guides/quick-start</li>
-<li> Плагин Auto Import </li>
-<li> npm https://www.npmjs.com/</li>
-<li>React Developer Tools расширение для Google(вкладки components и profiler) https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi/related?hl=en</li>
-</ul>
 
  [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
-In the project directory, you can run:
-
+В каталоге проекта вы можете запустить:
 ### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Запускает приложение в режиме разработки..<br />
+Откройте [http://localhost:3000](http://localhost:3000), чтобы просмотреть проект в браузере.
 
 ### `yarn build`
+Собирает приложение для сборки в папку `build`.<br />
+Правильно связывает React в производственном режиме и оптимизирует сборку для достижения максимальной производительности.
+Сборка минифицирована, а имена файлов включают хеши.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+# Инструменты и технологии
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ JavaScript (arrow functions, array functions, spread Operators)
+ React (react-router-dom, react-reveal, react-owl-carousel, react-hook-form, material-ui)
+ Redux (react-redux, redux-thunk)
+ VS Code (ES6 Snippets, Prettier, CSS Peek)
+ Chrome ( React Developer Tools, Redux Developer Tools)
+ Git (create repo, commit, remote, create and push branch)
+ 
+<ul>
+<li> react redux https://yarnpkg.com/package/react-redux </li>
+<li>react logger https://yarnpkg.com/package/redux-logger</li>
+<li>react trunk https://yarnpkg.com/package/react-thunk</li>
+<li>https://habr.com/ru/post/492378/</li>
+<li>https://jsonplaceholder.typicode.com/</li>
+</ul>
 
-### `yarn eject`
+## React
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Что такое React
+● React - JavaScript фронтенд библиотека, разработанная Facebook в 2011
+● В ядре - компонентный подход, позволяющий создавать переиспользуемые UI (User Interface)
+блоки
+● Служит, для создания сложных интерактивных UI для web и мобильной
+разработки
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Основные преимущества в React 
+● Увеличивает производительность отрисовки приложений
+● Может использоваться и на клиенте и на сервере
+● Из-за JSX читаемость кода увеличивается
+● Легко интегрировать с другими фреймворками
+● Легко писать unit тесты
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Какие есть ограничения в React?
+● React - всего лишь библиотека
+● Требуется некоторое время на освоение
+● Может быть немного сложным для начинающих
+● Код по-началу может выглядеть сложным из-за инфраструктуры и JSX
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Что такое JSX?
+JSX - ярлык для JavaScript XML. Это специальный синтаксис, который расширяет
+JavaScript возможностью писать HTML внутри.
+Это позволяет интегрировать шаблоны компонентов прямо в JavaScript, что делает
+разработку проще.
 
-## Learn More
+### Что такое Virtual DOM в React?
+Virtual DOM - легковесный JavaScript объект, который представляет копию реального
+DOM дерева. Нужен для оптимизации взаимодействия с DOM
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Что такое Props?
+Сокращенно от Properties. Входящие свойства в компонент. Они только для чтения и
+их нельзя менять. Всегда идут от родителя к ребенку.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Что такое state и как он используется?
+Обычный объект - источник данных. Содержит информацию по поведению и
+состоянию интерфейса. Можно мутировать
 
-### Code Splitting
+### В чем разница между state и props?
+state - структура данных, необходимая для изменения и отслеживания
+пользовательских действий
+props - набор конфигурации, поступающий от родительского элемента. Их нельзя
+изменять
+### Когда следует использовать Class компоненты, а когда функциональные?
+Если нужны жизненные этапы компонента - используем class компоненты
+Иначе для оптимизации лучше функциональные
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### Что такое React Hooks?
+Функционал, добавленный в React 16.8. С помощью хуков, можно писать приложения,
+используя только функциональные компоненты, без классов.
+С помощью хуков можно следить за стейтом, эмулировать жизненные этапы
+компонента, работа с ссылками и многое другое
 
-### Analyzing the Bundle Size
+### Что такое useState?
+Встроенные React хук. Позволяет работать со стейтом в функциональных
+компонентах. Принимает начальное значение. Возвращает массив, состоящий всегда
+из 2х элементов (кортеж), где:
+● первый элемент - само состояние
+● второй элемент - функция, меняющая состояние
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+### В чем смысл специального атрибута key?
+Атрибут позволяет React понимать, какие именно элементы в списке были
+модифицированы или удалены, что увеличивает производительность рендеринга.
+Лучше всего использовать уникальные значения, такие как ID. Индексы использовать
+не рекомендуется
 
-### Making a Progressive Web App
+### Передача двнных
+От родителя к ребенку - props.
+От ребенка к родителю  - callback.
+От ребенка к ребенку - Для того чтобы передать данные между соседними компонентами, нужно использовать посредника—их родителя. Сначала нужно передать данные от ребенка к родителю как аргумент коллбека. Потом присвоить эти данные в стейт родителя и передать через props другому компоненту. Но это плохая практика. Используем Redux или React Contex.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-### Advanced Configuration
+## Redux 
+### Что такое Redux?
+Библиотека для работы с потоком данных в JavaScript.Позволяет добавить дополнительный слой для приложения, где состояние описано в
+JavaScript объекте. Нужно для более удобного написания кода
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+### Что такое store в Redux?
+JavaScript объект, в котором содержится состояние приложения. Дополнительно
+отвечает за следующее:
+1. state может быть получен через getState()
+2. Изменять state можно через dispatch(action)
+3. Регистрировать изменения через subscribe(listener)
 
-### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+### Зачем нужен package.json
+ package.json хранит список пакетов, необходимых для проекта с нужными версиями, и на другой машине мы можем легко установить все пакеты, которые указаны там с помощью команды npm install или yarn install
 
-### `yarn build` fails to minify
+ 
+# Справочник:
+## Фреймворки React UI:
+✓ Material Ui https://material-ui.com/ru/
+React Bootstrap https://react-bootstrap.github.io/ 
+Ant Design https://ant.design/
+Semantic UI React https://react.semantic-ui.com/
+Blueprint https://blueprintjs.com/docs/
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Маршрутизация:
+✓ REACT ROUTER https://reactrouter.com/web/guides/quick-start
+● React Router позволяет создавать динамические ссылки в react роутере.
+
+
+
+## Менеджер состоянии:
+Redux https://redux.js.org/
+Mobx https://mobx.js.org/
+
+## Анимации:
+React Transition Group https://reactcommunity.org/react-transition-group/
+React Spring https://www.react-spring.io/
+Motion Api https://www.framer.com/motion/  https://www.npmjs.com/package/framer-motion
+✓ React Awesome Reveal https://react-awesome-reveal.morello.dev/docs/
+react-awesome-slider https://github.com/rcaferati/react-awesome-slider
+
+## Слайдеры
+✓ react-image-gallery https://www.linxtion.com/demo/react-image-gallery/
+✓ react-owl-carousel
+
+## Валидация форм:
+✓ React Hook Form https://react-hook-form.com/
+Formik https://formik.org/
+Redux Form https://redux-form.com/8.3.0/
+
+## GraphQL - язык запросов для API 
+
+## Менеджер пакетов:
+npm https://www.npmjs.com/
+✓ yarn https://yarnpkg.com/
+
+
+## ✓ Create React App - среда для изучения React  и создание нового одностраничного приложения для React
+
+## Расширения для Google 
+✓ React Developer Tools (вкладки components и profiler) https://chrome.google.com/webstore/detail/react-developer-tools/
+
+## Плагины VS Code:
+✓ Auto Import - ES6, TS, JSX, TSX https://marketplace.visualstudio.com/items?itemName=NuclleaR.vscode-extension-auto-import
+✓ Reactjs code snippets (rcc) https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets
+✓ CSS Peek https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek
+✓ Prettier - Code formatter https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+ESLint https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+Bracket Pair Colorizer https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer
+GraphQL for VS Code https://marketplace.visualstudio.com/items?itemName=kumar-harsh.graphql-for-vscode
+Indent-Rainbow https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow
+
+# Справочник по бэкенд
+## Использование базы данных (с помощью Mongoose) 
+https://developer.mozilla.org/ru/docs/Learn/Server-side/Express_Nodejs/mongoose
+MongoDB Community Server (установочный файл) https://www.mongodb.com/try/download/community
+
+
+### 
+https://www.npmjs.com/package/body-parser
+body-parser: является частью промежуточного программного обеспечения, которое считывает ввод формы и сохраняет его как объект javascript, доступный через req.body.
+
+https://www.npmjs.com/package/nodemon
+nodemon : будет следить за нашими файлами на предмет любых изменений, а затем перезапускает сервер при любых изменениях.
+
+https://www.npmjs.com/package/express
+express будет использоваться для сборки нашего сервера Node.js.
+
+https://www.npmjs.com/package/mongoose
+mongoose: инструмент объектного моделирования, используемый для асинхронного запроса MongoDB.
+
+https://www.npmjs.com/package/shortid 
+shortid: библиотека кратчайших узлов.Cоздает  короткие непоследовательные уникальные идентификаторы, дружественные по URL.
+
+## Postman — как инструмент тестирования API
+https://www.postman.com/
+● Метод GET нужен для получения какой-либо информации от сервера.
+● Метод POST нужен для передачи каких-либо данных с клиента на сервер. Для данного типа запросов можно воспользоваться https://jsonplaceholder.typicode.com/posts в качестве URL запроса. Это открытый сервис, который можно использовать для имитации работы сервера.
+● Метод DELETE нужен для удаления каких-либо данных из базы данных.

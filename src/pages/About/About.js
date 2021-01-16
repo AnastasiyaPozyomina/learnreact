@@ -1,24 +1,27 @@
 import React from "react";
 import BestFeatures from "../../components/BestFeatures/BestFeatures";
-import Lients from "../../components/Clients/Сlients";
+import Clients from "../../components/Clients/Сlients";
 import Footer from "../../components/Footer/Footer";
 import MainContent from "../../components/MainContent/MainContent";
-import OurTeam from "../../components/OurTeam/OurTeam";
+import OurTeam from "../../components/OurTeam";
+import Services from "../../components/Services/Services";
 
-export default class About extends React.Component {
-  render() {
+export default function About () {
     return (
-      <div>
+      <>
         <MainContent
-          h2={"OUR COMPANY"}
-          h4={"ABOUT US"}
-          className={"page-heading about-heading header-text"}
+          title={'OUR COMPANY'}
+          subtitle={'ABOUT US'}
+          className={'page-heading about-heading header-text'}
         />
-        <BestFeatures />
+        <BestFeatures
+         title={'Our Background'}
+        />
         <OurTeam />
-        <Lients />
+        <Services />
+        <Clients />
         <Footer />
-      </div>
+      </>
     );
   }
-}
+

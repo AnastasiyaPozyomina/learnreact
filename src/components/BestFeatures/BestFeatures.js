@@ -1,24 +1,29 @@
-import React from "react";
-import SocialIcons from "../SocialIcons/SocialIcons";
+import React from 'react';
+import SocialIcons from '../SocialIcons/SocialIcons';
+import Fade from 'react-reveal/Fade';
 
-export default class BestFeatures extends React.Component {
-  render() {
-    return (
-      <div className="best-features about-features">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
+export default function BestFeatures (props) {
+  return (
+    <div className="best-features about-features">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-12">
+            <Fade left>
               <div className="section-heading">
-                <h2>Our Background</h2>
+                <h2>{props.title}</h2>
               </div>
-            </div>
+            </Fade>
+          </div>
+          <Fade left>
             <div className="col-md-6">
               <div className="right-image">
                 <img src="images/feature-image.jpg" alt="" />
               </div>
             </div>
+          </Fade>
+          <Fade right>
             <div className="col-md-6">
-              <div className="left-content">
+              <div className="content">
                 <h4>Who we are &amp; What we do?</h4>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
@@ -34,9 +39,9 @@ export default class BestFeatures extends React.Component {
                 <SocialIcons />
               </div>
             </div>
-          </div>
+          </Fade>
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 }
