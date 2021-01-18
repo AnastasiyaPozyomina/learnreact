@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/learnreact/static/css/main.95db3d24.chunk.css",
-    "main.js": "/learnreact/static/js/main.0e916e55.chunk.js",
-    "main.js.map": "/learnreact/static/js/main.0e916e55.chunk.js.map",
+    "main.js": "/learnreact/static/js/main.881208bf.chunk.js",
+    "main.js.map": "/learnreact/static/js/main.881208bf.chunk.js.map",
     "runtime-main.js": "/learnreact/static/js/runtime-main.26c69b6e.js",
     "runtime-main.js.map": "/learnreact/static/js/runtime-main.26c69b6e.js.map",
     "static/css/2.828be9a0.chunk.css": "/learnreact/static/css/2.828be9a0.chunk.css",
-    "static/js/2.91cfc7eb.chunk.js": "/learnreact/static/js/2.91cfc7eb.chunk.js",
-    "static/js/2.91cfc7eb.chunk.js.map": "/learnreact/static/js/2.91cfc7eb.chunk.js.map",
+    "static/js/2.b8892c97.chunk.js": "/learnreact/static/js/2.b8892c97.chunk.js",
+    "static/js/2.b8892c97.chunk.js.map": "/learnreact/static/js/2.b8892c97.chunk.js.map",
     "index.html": "/learnreact/index.html",
-    "precache-manifest.6d0e5d599cffc8aea52c4da19d0e0ffc.js": "/learnreact/precache-manifest.6d0e5d599cffc8aea52c4da19d0e0ffc.js",
+    "precache-manifest.0771633d4cf74dbb4c1fd36f49ab352f.js": "/learnreact/precache-manifest.0771633d4cf74dbb4c1fd36f49ab352f.js",
     "service-worker.js": "/learnreact/service-worker.js",
     "static/css/2.828be9a0.chunk.css.map": "/learnreact/static/css/2.828be9a0.chunk.css.map",
     "static/css/main.95db3d24.chunk.css.map": "/learnreact/static/css/main.95db3d24.chunk.css.map",
-    "static/js/2.91cfc7eb.chunk.js.LICENSE.txt": "/learnreact/static/js/2.91cfc7eb.chunk.js.LICENSE.txt",
+    "static/js/2.b8892c97.chunk.js.LICENSE.txt": "/learnreact/static/js/2.b8892c97.chunk.js.LICENSE.txt",
     "static/media/fontawesome.css": "/learnreact/static/media/fontawesome-webfont.f7c2b4b7.eot"
   },
   "entrypoints": [
     "static/js/runtime-main.26c69b6e.js",
     "static/css/2.828be9a0.chunk.css",
-    "static/js/2.91cfc7eb.chunk.js",
+    "static/js/2.b8892c97.chunk.js",
     "static/css/main.95db3d24.chunk.css",
-    "static/js/main.0e916e55.chunk.js"
+    "static/js/main.881208bf.chunk.js"
   ]
 }
